@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "X%X",
+    "X%X"
+  ],
+  "key": {
+    "%": {
+      "item": "shanhaicontinent:hunye",
+      "data": 2
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "shanhaicontinent:butao_chest",
+    "data": 1
+  }
+}

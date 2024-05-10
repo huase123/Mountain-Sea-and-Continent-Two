@@ -1,0 +1,16 @@
+[
+{
+  "modid": "${mod_id}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/huase123/shanhaicontinent.git",
+  "updateUrl": "https://www.mcmod.cn/download/12596.html",
+  "authorList": ["${mod_author}"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "assets/shanhaicontinent/textures/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

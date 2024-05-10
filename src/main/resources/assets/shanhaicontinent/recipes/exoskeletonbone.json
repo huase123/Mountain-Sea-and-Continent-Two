@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  "#"
+],
+  "key": {
+    "#": [
+    {
+      "item": "shanhaicontinent:exoskeletonbone",
+      "data": 0
+    },{
+
+      "item": "shanhaicontinent:headbone",
+      "data": 0
+    },{
+
+      "item": "shanhaicontinent:lefthandbone",
+      "data": 0
+    },{
+
+      "item": "shanhaicontinent:leftlegbone",
+      "data": 0
+    },{
+
+      "item": "shanhaicontinent:righthandbone",
+      "data": 0
+    },{
+
+      "item": "shanhaicontinent:rightlegbone",
+      "data": 0
+    },{
+      "item": "shanhaicontinent:trunkbone",
+      "data": 0
+    }
+  ]},
+  "result": {
+    "item": "shanhaicontinent:soulbonemeal",
+    "data": 0,
+    "count": 5
+  }
+}

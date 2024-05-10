@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shanhaicontinent:hunye",
+  "result": { "item": "shanhaicontinent:hunye", "data": 2 ,"count": 3 },
+  "ingredients": [
+    { "item": "shanhaicontinent:hunye", "data": 3 }
+  ]
+}

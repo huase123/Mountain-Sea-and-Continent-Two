@@ -1,0 +1,11 @@
+{
+    "compatibilityLevel": "JAVA_8",
+    "package": "hua.huase.shanhaicontinent.mixin",
+    "refmap": "refmap.shanhaicontinent.json",
+    "minVersion": "0.8.3-SNAPSHOT",
+    "mixins": [
+        "MixinEntityPlayer"
+    ],
+    "client": [],
+    "server": []
+}
