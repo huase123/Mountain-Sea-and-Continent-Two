@@ -19,7 +19,6 @@ public class EntityJinengHtcLTYJ extends EntityThrowable {
 
     private EntityPlayer entityPlayer;
 
-    private int ticksLiving;
 
     public EntityJinengHtcLTYJ(World worldIn) {
         super(worldIn);
@@ -35,20 +34,21 @@ public class EntityJinengHtcLTYJ extends EntityThrowable {
 
     public void shoot(Entity entityThrower, float rotationPitchIn, float rotationYawIn, float pitchOffset, float velocity, float inaccuracy)
     {
-        this.entityPlayer = (EntityPlayer) entityThrower;
-        this.ticksLiving = 0;
-        float f = -MathHelper.sin(rotationYawIn * 0.017453292F) * MathHelper.cos(rotationPitchIn * 0.017453292F);
-        float f1 = -MathHelper.sin((rotationPitchIn + pitchOffset) * 0.017453292F);
-        float f2 = MathHelper.cos(rotationYawIn * 0.017453292F) * MathHelper.cos(rotationPitchIn * 0.017453292F);
-        this.shoot(f, f1, f2, velocity, inaccuracy);
-        this.motionX += entityThrower.motionX;
-        this.motionZ += entityThrower.motionZ;
 
-        if (!entityThrower.onGround)
-        {
-            this.motionY += entityThrower.motionY;
-        }
+        this.entityPlayer = (EntityPlayer) entityThrower;
+        float f = -MathHelper.sin(rotationYawIn * 0.017453292F);
+        float f1 = -MathHelper.sin((rotationPitchIn + pitchOffset) * 0.017453292F);
+        float f2 = MathHelper.cos(rotationYawIn * 0.017453292F);
+        this.shoot(0, -0.1, 0, velocity, inaccuracy);
+        this.posX = entityThrower.posX+f*10;
+        this.posY = entityThrower.posY+8;
+        this.posZ = entityThrower.posZ+f2*10;
+        this.motionY += entityThrower.motionY;
+
+
+        this.rotationYaw = rotationYawIn;
     }
+
 
 
     protected float getGravityVelocity()
@@ -60,14 +60,13 @@ public class EntityJinengHtcLTYJ extends EntityThrowable {
     public void onUpdate()
     {
         super.onUpdate();
-        this.ticksLiving++;
-        if(ticksLiving>=20){
+        if(this.ticksExisted>=30){
             this.setDead();
         }
 
 
 
-        List<Entity> list = this.world.getEntitiesWithinAABBExcludingEntity(this, this.getEntityBoundingBox().expand(this.motionX, this.motionY, this.motionZ).grow(0.0D));
+        List<Entity> list = this.world.getEntitiesWithinAABBExcludingEntity(this, this.getEntityBoundingBox().expand(this.motionX, this.motionY, this.motionZ).grow(8.0D,0,8));
         for (Entity entity : list) {
             if (!this.world.isRemote&&entity!=null&&entity instanceof EntityLivingBase && entityPlayer!=null && entity !=entityPlayer)
             {

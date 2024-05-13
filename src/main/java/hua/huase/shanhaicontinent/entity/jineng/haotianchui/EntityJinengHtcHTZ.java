@@ -23,31 +23,30 @@ public class EntityJinengHtcHTZ extends EntityThrowable {
 
     public EntityJinengHtcHTZ(World worldIn) {
         super(worldIn);
-        this.setSize(3.0F, 1.4F);
+        this.setSize(4.5F, 1.4F);
     }
 
     public EntityJinengHtcHTZ(World worldIn, EntityPlayer entityPlayer) {
         super(worldIn,entityPlayer);
-        this.setSize(3.0F, 1.4F);
+        this.setSize(4.5F, 1.4F);
     }
 
 
 
     public void shoot(Entity entityThrower, float rotationPitchIn, float rotationYawIn, float pitchOffset, float velocity, float inaccuracy)
     {
+
+
         this.entityPlayer = (EntityPlayer) entityThrower;
         this.ticksLiving = 0;
-        float f = -MathHelper.sin(rotationYawIn * 0.017453292F) * MathHelper.cos(rotationPitchIn * 0.017453292F);
+        float f = -MathHelper.sin(rotationYawIn * 0.017453292F);
         float f1 = -MathHelper.sin((rotationPitchIn + pitchOffset) * 0.017453292F);
-        float f2 = MathHelper.cos(rotationYawIn * 0.017453292F) * MathHelper.cos(rotationPitchIn * 0.017453292F);
-        this.shoot(f, f1, f2, velocity, inaccuracy);
-        this.motionX += entityThrower.motionX;
-        this.motionZ += entityThrower.motionZ;
-
-        if (!entityThrower.onGround)
-        {
-            this.motionY += entityThrower.motionY;
-        }
+        float f2 = MathHelper.cos(rotationYawIn * 0.017453292F);
+        this.shoot(0, -0.1, 0, velocity, inaccuracy);
+        this.posX = entityThrower.posX+f*6;
+        this.posY = entityThrower.posY+5;
+        this.posZ = entityThrower.posZ+f2*6;
+        this.motionY += entityThrower.motionY;
     }
 
 
@@ -67,7 +66,7 @@ public class EntityJinengHtcHTZ extends EntityThrowable {
 
 
 
-        List<Entity> list = this.world.getEntitiesWithinAABBExcludingEntity(this, this.getEntityBoundingBox().expand(this.motionX, this.motionY, this.motionZ).grow(0.0D));
+        List<Entity> list = this.world.getEntitiesWithinAABBExcludingEntity(this, this.getEntityBoundingBox().grow(1.0D));
         for (Entity entity : list) {
             if (!this.world.isRemote&&entity!=null&&entity instanceof EntityLivingBase && entityPlayer!=null && entity !=entityPlayer)
             {
@@ -79,11 +78,11 @@ public class EntityJinengHtcHTZ extends EntityThrowable {
     }
     @Override
     protected void onImpact(RayTraceResult result) {
-//        if (!this.world.isRemote&&result.entityHit!=null&&result.entityHit instanceof EntityLivingBase&&result.entityHit !=entityPlayer)
-//        {
-//
-////            result.entityHit.attackEntityFrom(DamageSource.causePlayerDamage(entityPlayer),20);
-//        }
+        if (!this.world.isRemote&&result.entityHit!=null&&result.entityHit instanceof EntityLivingBase&&result.entityHit !=entityPlayer)
+        {
+
+//            result.entityHit.attackEntityFrom(DamageSource.causePlayerDamage(entityPlayer),20);
+        }
     }
 
 }

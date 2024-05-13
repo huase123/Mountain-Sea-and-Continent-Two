@@ -18,7 +18,6 @@ import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -47,7 +46,7 @@ public class SeaMXvanGui extends EntityMob implements SeaMEntityMobBase {
 
     public boolean getCanSpawnHere()
     {
-        return (this.rand.nextInt(30000) == 0 || !this.world.canBlockSeeSky(new BlockPos(this))) && super.getCanSpawnHere();
+        return (this.rand.nextInt(30000) == 0 && super.getCanSpawnHere());
     }
 
     public static final EntityEntry XvanGui =

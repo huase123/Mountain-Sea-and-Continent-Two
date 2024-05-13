@@ -2,7 +2,6 @@ package hua.huase.shanhaicontinent.potion;
 
 import hua.huase.shanhaicontinent.potion.potionjineng.haotianchui.PotionWuHunHtcHTHD;
 import hua.huase.shanhaicontinent.potion.potionjineng.haotianchui.PotionWuHunHtcHTHT;
-import hua.huase.shanhaicontinent.potion.potionjineng.haotianchui.PotionWuHunHtcLTLC;
 import hua.huase.shanhaicontinent.potion.potionjineng.huang.PotionWuHunHuangBZMZZS;
 import hua.huase.shanhaicontinent.potion.potionjineng.huang.PotionWuHunHuangLHBS;
 import hua.huase.shanhaicontinent.potion.potionjineng.jingubang.*;
@@ -34,8 +33,6 @@ public class PotionRegistryHandler
     public static final Potion Potion_Haotianchui_HTHD = new PotionWuHunHtcHTHD();
 //    昊天护盾
     public static final Potion Potion_Haotianchui_HTHT = new PotionWuHunHtcHTHT();
-//    落天雷锤
-    public static final Potion Potion_Haotianchui_LTLC = new PotionWuHunHtcLTLC();
     @SubscribeEvent
     public static void onPotionRegistry(RegistryEvent.Register<Potion> event)
     {

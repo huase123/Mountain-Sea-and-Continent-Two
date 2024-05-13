@@ -1,23 +1,27 @@
 package hua.huase.shanhaicontinent.item.jineng.haotianchui;
 
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
 import hua.huase.shanhaicontinent.ExampleMod;
 import hua.huase.shanhaicontinent.capability.CapabilityRegistryHandler;
+import hua.huase.shanhaicontinent.capability.PlayerCapability;
 import hua.huase.shanhaicontinent.handers.HanderAny;
 import hua.huase.shanhaicontinent.item.jineng.JinengMethond;
-import hua.huase.shanhaicontinent.potion.PotionRegistryHandler;
+import hua.huase.shanhaicontinent.network.NetworkRegistryHandler;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.*;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -26,19 +30,31 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import javax.annotation.Nullable;
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 
 public class WuqijnHtcSMZC extends Item implements JinengMethond
 {
     public WuqijnHtcSMZC(String name, CreativeTabs Tabs)
     {
         super();
-        this.setUnlocalizedName(ExampleMod.MODID + name);
 
+        this.setUnlocalizedName(ExampleMod.MODID + name);
         this.setRegistryName(name);
         this.setCreativeTab(Tabs);
         setMaxStackSize(1);
         HanderAny.itemList.add(this);
         JinengMethond.addJinengItem(this,"haotianchui");
+    }
+
+
+    public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker)
+    {
+        if(JinengMethond.isBinding(stack,attacker)){
+            stack.damageItem(0, attacker);
+            attacker.hurtResistantTime=4;
+            return true;
+        }
+        return false;
     }
 
 
@@ -63,37 +79,31 @@ public class WuqijnHtcSMZC extends Item implements JinengMethond
     }
 
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        ItemStack heldItem = playerIn.getHeldItem(handIn);
-        heldItem = JinengMethond.isJinengMethond(heldItem,this);
 
-        if(!JinengMethond.isBinding(heldItem,playerIn)) {
-            return ActionResult.newResult(EnumActionResult.SUCCESS, heldItem);
+        if(!JinengMethond.isBinding(playerIn.getHeldItem(handIn),playerIn)) {
+
+            return ActionResult.newResult(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
         }
-        if(heldItem.getTagCompound()!=null&&heldItem.getTagCompound().getInteger("nianxian")>0){
-            playerIn.getCooldownTracker().setCooldown(this, (int) (1200-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*100));
-        }else {
-            return ActionResult.newResult(EnumActionResult.SUCCESS, heldItem);
-        }
-//        playerIn.setActiveHand(handIn);
-
-        EntityPlayer entityLiving1 =  playerIn;
-        if(!worldIn.isRemote){
-
-            playerIn.addPotionEffect(new PotionEffect(PotionRegistryHandler.Potion_Wuqijn_DZSFT,600,0,true,true));
-
-            List<Entity> list = worldIn.getEntitiesWithinAABBExcludingEntity(playerIn, playerIn.getEntityBoundingBox().grow(20.0D,5.0D,20.0D));
-            for (Entity entity : list) {
-                if (!worldIn.isRemote&&entity!=null&&entity instanceof EntityLivingBase && playerIn!=null && entity !=playerIn)
-                {
-                    entity.attackEntityFrom(DamageSource.causePlayerDamage(playerIn),playerIn.getCapability(CapabilityRegistryHandler.PLYAER_CAPABILITY,null).getWugong()*3.0f);
-                    worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 2.0F, 2.0F);
-
+        playerIn.getCooldownTracker().setCooldown(this, 10);
+//        if(!worldIn.isRemote){
+        if(true){
+            ItemStack itemstack = playerIn.getHeldItem(handIn);
+            if(itemstack.getTagCompound()!=null){
+                byte b= 0;
+                NBTTagCompound wuhunjineng = itemstack.getTagCompound().getCompoundTag("wuhunjineng"+b);
+                while (!wuhunjineng.equals(new NBTTagCompound())){
+                    ItemStack jineng = new ItemStack(wuhunjineng);
+                    if((!jineng.isEmpty()) && jineng.getItem() instanceof JinengMethond){
+                        if (!playerIn.getCooldownTracker().hasCooldown(jineng.getItem()))
+                        {
+                            jineng.useItemRightClick(playerIn.world, playerIn, handIn);
+                        }
+                    }
+                    ++b;
+                    wuhunjineng = itemstack.getTagCompound().getCompoundTag("wuhunjineng"+b);
                 }
             }
-
-
         }
-
         return ActionResult.newResult(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 
@@ -131,13 +141,70 @@ public class WuqijnHtcSMZC extends Item implements JinengMethond
     }
 
 
+    @Override
     public void addAttributeModifiers(ItemStack itemStack, EntityLivingBase entityLivingBase, EntityEquipmentSlot equipmentSlot) {
-
         if(JinengMethond.isBinding(itemStack,entityLivingBase)) {
+
+
+            PlayerCapability capability = entityLivingBase.getCapability(CapabilityRegistryHandler.PLYAER_CAPABILITY, null);
+            entityLivingBase.getAttributeMap().applyAttributeModifiers(this.Multimap(capability));
+            if (equipmentSlot == EntityEquipmentSlot.OFFHAND) {
+                float v0 = ((int) ((capability.getDengji()) / 10f) + 1) * capability.getWugong() * 0.05f;
+                float v1 = ((int) ((capability.getDengji()) / 10f) + 1) * capability.getBaojilv() * 0.05f;
+                float v2 = ((int) ((capability.getDengji()) / 10f) + 1) * capability.getBaojishanghai() * 0.05f;
+//                float v1 = ((int) ((capability.getDengji()) / 10f) + 1) * capability.getWufang() * 0.04f;
+//                float v2 = ((int) ((capability.getDengji()) / 10f) + 1) * capability.getZhenshang() * 0.04f;
+//                float v4 = ((int) ((capability.getDengji()) / 10f) + 1) * capability.getKangbao() * 0.04f;
+                if (itemStack.getTagCompound() == null) {
+                    NBTTagCompound compound = new NBTTagCompound();
+                    compound.setFloat("wugong", v0);
+                    compound.setFloat("baojilv", v1);
+                    compound.setFloat("baojishanghai", v2);
+                    itemStack.setTagCompound(compound);
+                }
+                itemStack.getTagCompound().setFloat("wugong", v0);
+                itemStack.getTagCompound().setFloat("baojilv", v1);
+                itemStack.getTagCompound().setFloat("baojishanghai", v2);
+                capability.addWugong(v0);
+                capability.addBaojilv(v1);
+                capability.addBaojishanghai(v2);
+                NetworkRegistryHandler.PlayerListen.sendClientCustomPacket((EntityPlayer) entityLivingBase);
+            }
         }
     }
 
+    @Override
     public void removeAttributeModifiers(ItemStack itemStack, EntityLivingBase entityLivingBase, EntityEquipmentSlot equipmentSlot) {
+        if(entityLivingBase instanceof EntityPlayer){
+            PlayerCapability capability = entityLivingBase.getCapability(CapabilityRegistryHandler.PLYAER_CAPABILITY, null);
+            entityLivingBase.getAttributeMap().removeAttributeModifiers(this.Multimap(capability));
+
+            if(equipmentSlot==EntityEquipmentSlot.OFFHAND) {
+                if (itemStack.getTagCompound() == null) return;
+                float v0 = itemStack.getTagCompound().getFloat("wugong");
+                float v1 = itemStack.getTagCompound().getFloat("baojilv");
+                float v2 = itemStack.getTagCompound().getFloat("baojishanghai");
+                capability.addWugong(-v0);
+                capability.addBaojilv(-v1);
+                capability.addBaojishanghai(-v2);
+                NetworkRegistryHandler.PlayerListen.sendClientCustomPacket((EntityPlayer) entityLivingBase);
+            }
+        }
+    }
+
+    public Multimap<String, AttributeModifier> Multimap(PlayerCapability capability){
+
+        Multimap<String, AttributeModifier> multimap = HashMultimap.<String, AttributeModifier>create();
+        multimap.clear();
+
+
+        multimap.put(SharedMonsterAttributes.MOVEMENT_SPEED.getName(), new AttributeModifier(UUID.fromString("FA233E1C-4180-4865-B01B-BCCE9785ACA3"), "Weapon modifier", 1.0D, 2));
+        multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(), new AttributeModifier(UUID.fromString("FA233E1C-4180-4865-B01B-BCCE9785ACA3"), "Weapon modifier", -2d+capability.getDengji()/20f, 0));
+//        multimap.put(EntityPlayer.REACH_DISTANCE.getName(), new AttributeModifier(UUID.fromString("FA233E1C-4180-4865-B01B-BCCE9785ACA3"), "Weapon modifier", 2.0D, 0));
+//        multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(UUID.fromString("FA233E1C-4180-4865-B01B-BCCE9785ACA3"), "Weapon modifier", (double)capability.getWugong(), 0));
+//        multimap.put(SharedMonsterAttributes.MAX_HEALTH.getName(), new AttributeModifier(UUID.fromString("FA233E1C-4180-4865-B01B-BCCE9785ACA3"), "Weapon modifier", capability.getMaxshengming(), 0));
+
+        return multimap;
     }
 
 

@@ -1,10 +1,7 @@
 package hua.huase.shanhaicontinent.entity;
 
 import hua.huase.shanhaicontinent.entity.jineng.EntityJiNengThread;
-import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcHTJJ;
-import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcHTZ;
-import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcLTYJ;
-import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcTDWJ;
+import hua.huase.shanhaicontinent.entity.jineng.haotianchui.*;
 import hua.huase.shanhaicontinent.entity.jineng.huang.EntityWuHunHuangBSJ;
 import hua.huase.shanhaicontinent.entity.jineng.huang.EntityWuHunHuangCMJJ;
 import hua.huase.shanhaicontinent.entity.jineng.huang.EntityWuHunHuangKPBS;
@@ -122,6 +119,11 @@ public class EntityRegistryHandler
                     .id(EntityJinengHtcTDWJ.ID, entityID++).name(EntityJinengHtcTDWJ.NAME).tracker(64, 10, true).build();
 
 
+    public static final EntityEntry JinengHtcLTLC =
+            EntityEntryBuilder.create().entity(EntityJinengHtcLTLC.class)
+                    .id(EntityJinengHtcLTLC.ID, entityID++).name(EntityJinengHtcLTLC.NAME).tracker(64, 10, true).build();
+
+
 
 
 
@@ -150,6 +152,7 @@ public class EntityRegistryHandler
         registry.register(JinengHtcHTZ);
         registry.register(JinengHtcLTYJ);
         registry.register(JinengHtcTDWJ);
+        registry.register(JinengHtcLTLC);
 
 //山海生物
         registry.register(SeaMLuoLuoNiao.LuoLuoNiao);

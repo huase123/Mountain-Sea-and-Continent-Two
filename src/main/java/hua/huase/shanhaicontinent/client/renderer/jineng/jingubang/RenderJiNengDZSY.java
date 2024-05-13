@@ -33,53 +33,95 @@ public class RenderJiNengDZSY extends RenderEntity {
 
     public void doRender(Entity entity, double x, double y, double z, float entityYaw, float partialTicks)
     {
-        if(timemap.get(entity.getEntityId()) == null) timemap.put(entity.getEntityId(),0);
-
-        int time = timemap.get(entity.getEntityId()).intValue();
-
-        int limitFramerate = Minecraft.getMinecraft().gameSettings.limitFramerate;
-        float ticks = (float) ((float)time/(float)limitFramerate);
-
-        OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float)15728880%65536, (float)15728880/ 65536);
-        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-
-        if(item==null)return;
-
-        GlStateManager.pushMatrix();
-        GlStateManager.translate((float)x, (float)y+0.1, (float)z);
-        GlStateManager.rotate(90, 1.0F, 0.0F, 0.0F);
-        GlStateManager.rotate(ticks*40, 0.0F, 0.0F, 1.0F);
-
-        GlStateManager.disableLighting();
-        GlStateManager.enablePolygonOffset();
-        GlStateManager.enableBlend();
-        GlStateManager.depthMask(false);
-//        GlStateManager.doPolygonOffset(1, -11);
-
-        Minecraft.getMinecraft().getTextureManager().bindTexture(POLAR_BEAR_TEXTURE);
-        Tessellator tessellator = Tessellator.getInstance();
-        BufferBuilder buffer = tessellator.getBuffer();
-
-        buffer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
-
-        buffer.pos(  -10,   -10, 0).tex(0, 0).endVertex();
-        buffer.pos(  -10, 10, 0).tex(0, 1).endVertex();
-        buffer.pos(10, 10, 0).tex(1, 1).endVertex();
-        buffer.pos(10,   -10, 0).tex(1, 0).endVertex();
 
 
-        tessellator.draw();
+        for (int i = 0; i < 2; i++) {
 
-        GlStateManager.disableBlend();
-        GlStateManager.depthMask(true);
-        GlStateManager.disablePolygonOffset();
-        GlStateManager.enableLighting();
-        GlStateManager.popMatrix();
+            OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float)15728880%65536, (float)15728880/ 65536);
+            GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+
+            GlStateManager.pushMatrix();
+            GlStateManager.translate((float)x, (float)y+0.1* (i*2-1), (float)z);
+            GlStateManager.rotate( -(entity.ticksExisted+partialTicks)*4 * (i*2-1), 0.0F, 1.0F, 0.0F);
+
+            GlStateManager.rotate(90 * (i*2-1), 1.0F, 0.0F, 0.0F);
+//            GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+
+            GlStateManager.disableLighting();
+            GlStateManager.enablePolygonOffset();
+            GlStateManager.enableBlend();
+            GlStateManager.depthMask(false);
+
+            Minecraft.getMinecraft().getTextureManager().bindTexture(POLAR_BEAR_TEXTURE);
+            Tessellator tessellator = Tessellator.getInstance();
+            BufferBuilder buffer = tessellator.getBuffer();
+
+            buffer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
+
+            buffer.pos(  -10,   -10, 0).tex(0, 0).endVertex();
+            buffer.pos(  -10, 10, 0).tex(0, 1).endVertex();
+            buffer.pos(10, 10, 0).tex(1, 1).endVertex();
+            buffer.pos(10,   -10, 0).tex(1, 0).endVertex();
+
+
+            tessellator.draw();
+
+            GlStateManager.disableBlend();
+            GlStateManager.depthMask(true);
+            GlStateManager.disablePolygonOffset();
+            GlStateManager.enableLighting();
+            GlStateManager.popMatrix();
+        }
 
 
 
 
-        timemap.put(entity.getEntityId(),time>= 18*limitFramerate ? 0:++time);
+
+
+
+        for (int i = 0; i < 12; i++) {
+
+            OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float)15728880%65536, (float)15728880/ 65536);
+            GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+
+            GlStateManager.pushMatrix();
+            GlStateManager.translate((float)x, (float)y+0.5, (float)z);
+            GlStateManager.rotate(30*i + (entity.ticksExisted+partialTicks)*4, 0.0F, 1.0F, 0.0F);
+
+//            GlStateManager.rotate(10, 0.0F, 0.0F, 1.0F);
+            GlStateManager.color(1.0F, 1.0F, 1.0F, 0.5F);
+
+            GlStateManager.disableLighting();
+            GlStateManager.enablePolygonOffset();
+            GlStateManager.enableBlend();
+            GlStateManager.depthMask(false);
+            GlStateManager.doPolygonOffset(-3, -30);
+
+            Minecraft.getMinecraft().getTextureManager().bindTexture(POLAR_BEAR_TEXTURE);
+            Tessellator tessellator = Tessellator.getInstance();
+            BufferBuilder buffer = tessellator.getBuffer();
+
+            buffer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
+
+            buffer.pos(  -10,   -10, 0).tex(0, 0).endVertex();
+            buffer.pos(  -10, 10, 0).tex(0, 1).endVertex();
+            buffer.pos(10, 10, 0).tex(1, 1).endVertex();
+            buffer.pos(10,   -10, 0).tex(1, 0).endVertex();
+
+
+            tessellator.draw();
+
+            GlStateManager.disableBlend();
+            GlStateManager.depthMask(true);
+            GlStateManager.disablePolygonOffset();
+            GlStateManager.enableLighting();
+            GlStateManager.popMatrix();
+
+
+        }
+
+
+
 
     }
 

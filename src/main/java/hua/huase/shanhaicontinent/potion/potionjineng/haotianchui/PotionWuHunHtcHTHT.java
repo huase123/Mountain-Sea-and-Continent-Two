@@ -6,21 +6,28 @@ import hua.huase.shanhaicontinent.ExampleMod;
 import hua.huase.shanhaicontinent.capability.CapabilityRegistryHandler;
 import hua.huase.shanhaicontinent.capability.PlayerCapability;
 import hua.huase.shanhaicontinent.network.NetworkRegistryHandler;
+import hua.huase.shanhaicontinent.potion.PotionSeaMRender;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.OpenGlHelper;
+import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AbstractAttributeMap;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.event.RenderPlayerEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.UUID;
 
+import static hua.huase.shanhaicontinent.client.renderer.jineng.haotianchui.RenderJiNengHtcHTZ.item;
 import static hua.huase.shanhaicontinent.potion.PotionRegistryHandler.POTION_LIST;
 
-public class PotionWuHunHtcHTHT extends Potion
+public class PotionWuHunHtcHTHT extends PotionSeaMRender
 {
     private static final ResourceLocation TEXTURE =
             new ResourceLocation(ExampleMod.MODID + ":textures/potion/wuhunhaotianchui/wuhunhtchtht.png");
@@ -35,6 +42,28 @@ public class PotionWuHunHtcHTHT extends Potion
     }
 
 
+    @SideOnly(Side.CLIENT)
+    public void entityRender(RenderPlayerEvent.Post event){
+
+        OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float)15728880%65536, (float)15728880/ 65536);
+        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+
+        GlStateManager.pushMatrix();
+        GlStateManager.translate((float)event.getX(), (float)event.getY()+1.0f, (float)event.getZ());
+
+        GlStateManager.rotate((event.getEntityPlayer().ticksExisted+event.getPartialRenderTick())*10, 0.0F, 1.0F, 0.0F);
+//        GlStateManager.rotate(90.0F, 0.0F, 0.0F, 1.0F);
+//        GlStateManager.rotate((float)(this.renderManager.options.thirdPersonView == 2 ? -1 : 1) * -this.renderManager.playerViewX, 1.0F, 0.0F, 0.0F);
+
+        GlStateManager.scale(5.0F, 5.0F, 5.0F);
+        Minecraft.getMinecraft().getRenderItem().renderItem(item, ItemCameraTransforms.TransformType.GROUND);
+        GlStateManager.popMatrix();
+
+
+
+
+
+    }
 
     public Multimap<String, AttributeModifier> Multimap(){
 

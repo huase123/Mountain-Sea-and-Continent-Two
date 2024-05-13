@@ -91,6 +91,7 @@ public class WuqiHaoTianChui extends ItemSword implements JinengMethond
     }
 
 
+
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {

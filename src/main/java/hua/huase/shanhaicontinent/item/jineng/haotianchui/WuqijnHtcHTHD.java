@@ -72,7 +72,8 @@ public class WuqijnHtcHTHD extends Item implements JinengMethond
         }
 
         if(heldItem.getTagCompound()!=null&&heldItem.getTagCompound().getInteger("nianxian")>0){
-            playerIn.getCooldownTracker().setCooldown(this, (int) (600-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*200));
+            playerIn.getCooldownTracker().setCooldown(this, (int) (10-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*200));
+//            playerIn.getCooldownTracker().setCooldown(this, (int) (600-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*200));
         }else {
             return ActionResult.newResult(EnumActionResult.SUCCESS, heldItem);
         }

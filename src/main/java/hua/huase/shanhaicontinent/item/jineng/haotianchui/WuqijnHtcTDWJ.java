@@ -70,7 +70,8 @@ public class WuqijnHtcTDWJ extends Item implements JinengMethond
             return ActionResult.newResult(EnumActionResult.SUCCESS, heldItem);
         }
         if(heldItem.getTagCompound()!=null&&heldItem.getTagCompound().getInteger("nianxian")>0){
-            playerIn.getCooldownTracker().setCooldown(this, (int) (400-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*10));
+//            playerIn.getCooldownTracker().setCooldown(this, (int) (400-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*10));
+            playerIn.getCooldownTracker().setCooldown(this, (int) (10-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*10));
         }else {
             return ActionResult.newResult(EnumActionResult.SUCCESS, heldItem);
         }
@@ -79,7 +80,7 @@ public class WuqijnHtcTDWJ extends Item implements JinengMethond
         if(!worldIn.isRemote){
 
             EntityJinengHtcTDWJ jiNengThread = new EntityJinengHtcTDWJ(worldIn,playerIn);
-            jiNengThread.shoot(playerIn, playerIn.rotationPitch, playerIn.rotationYaw,0,2f,0.0f);
+            jiNengThread.shoot(playerIn, playerIn.rotationPitch, playerIn.rotationYaw,0,0.8f,0.0f);
             worldIn.spawnEntity(jiNengThread);
             worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 2.0F, 2.0F);
 

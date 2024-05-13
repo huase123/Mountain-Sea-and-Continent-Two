@@ -143,9 +143,9 @@ public class HanderAny {
         new WuqijnHtcHTHD("wuqijnhtchthd", TabExample.TAB2);
         new WuqijnHtcSMZC("wuqijnhtcsmzc", TabExample.TAB2);
         new WuqijnHtcTDWJ("wuqijnhtctdwj", TabExample.TAB2);
+        new WuqijnHtcHTJJ("wuqijnhtchtjj", TabExample.TAB2);
         new WuqijnHtcHTHT("wuqijnhtchtht", TabExample.TAB2);
         new WuqijnHtcLTYJ("wuqijnhtcltyj", TabExample.TAB2);
-        new WuqijnHtcHTJJ("wuqijnhtchtjj", TabExample.TAB2);
         new WuqijnHtcLTLC("wuqijnhtcltlc", TabExample.TAB2);
 
 

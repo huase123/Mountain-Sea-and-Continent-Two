@@ -2,6 +2,8 @@ package hua.huase.shanhaicontinent.event;
 
 import hua.huase.shanhaicontinent.item.armor.ArmorApi;
 import hua.huase.shanhaicontinent.item.jineng.JinengMethond;
+import hua.huase.shanhaicontinent.item.jineng.haotianchui.WuqiHaoTianChui;
+import hua.huase.shanhaicontinent.item.jineng.haotianchui.WuqijnHtcSMZC;
 import hua.huase.shanhaicontinent.item.jineng.huang.WuHunHuangyishenweizhong;
 import hua.huase.shanhaicontinent.item.jineng.jingubang.Wuqijingubang;
 import net.minecraft.item.ItemArmor;
@@ -41,8 +43,8 @@ public class ItemAnvilUpdateEvent {
         }
 
         if(left.getItem() instanceof JinengMethond && right.getItem() instanceof JinengMethond &&
-                (left.getItem() instanceof WuHunHuangyishenweizhong || left.getItem() instanceof Wuqijingubang) &&
-                (!(right.getItem() instanceof WuHunHuangyishenweizhong) && !(right.getItem() instanceof Wuqijingubang))){
+                (left.getItem() instanceof WuHunHuangyishenweizhong || left.getItem() instanceof Wuqijingubang|| left.getItem() instanceof WuqiHaoTianChui || left.getItem() instanceof WuqijnHtcSMZC) &&
+                (!(right.getItem() instanceof WuHunHuangyishenweizhong) && !(right.getItem() instanceof Wuqijingubang)&& !(right.getItem() instanceof WuqiHaoTianChui)&& !(right.getItem() instanceof WuqijnHtcSMZC))){
             if(left.getTagCompound().getString("playername").equals(right.getTagCompound().getString("playername"))){
                 ItemStack copy = left.copy();
                 NBTTagCompound tagCompound = copy.getTagCompound();

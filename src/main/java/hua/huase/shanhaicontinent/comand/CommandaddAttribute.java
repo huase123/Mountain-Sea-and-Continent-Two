@@ -49,7 +49,7 @@ public class CommandaddAttribute extends CommandBase {
         if(capability==null)return;
         if(args.length == i + 2){
             int num = Integer.parseInt(args[i+1]);
-            if(num>10000||num<-10000) {
+            if(num>100000||num<-100000) {
                 sender.getCommandSenderEntity().sendMessage(new TextComponentTranslation("message.addattribute.fail.num", num));
                 return;
             }

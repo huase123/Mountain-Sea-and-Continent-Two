@@ -244,6 +244,7 @@ public class HunhuanEntity extends Entity {
 
                                 playerCapability.setJingshenli(v);
                                 if(new Random().nextInt(2)!=0||jingshenli>nianxian/20){
+                                    PlayerCapabilityApi.tuPo(player);
     //								playerCapability.getMonsterCapabilityList().add(entity.getCapability(MONSTER_CAPABILITY, null));
                                     List<MonsterCapability> monsterCapabilityList = playerCapability.getMonsterCapabilityList();
 //                                    if(monsterCapabilityList==null)monsterCapabilityList=new ArrayList<>();
@@ -253,7 +254,6 @@ public class HunhuanEntity extends Entity {
 //                                    playerCapability.addDengji(1);
 
                                     TFAdvancements.PLAYER_XISHOUHUNHUAN.trigger((EntityPlayerMP) player,nianxian);
-                                    PlayerCapabilityApi.tuPo(player);
                                     NetworkRegistryHandler.PlayerListen.sendClientCustomPacket((EntityPlayer) player);
 
                                     SendTitle.sendTitle((EntityPlayerMP)player,ACTIONBAR,YELLOW,"message.hunhuan.sccuess", nianxian);

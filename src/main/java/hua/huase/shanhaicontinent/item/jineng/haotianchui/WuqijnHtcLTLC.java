@@ -1,12 +1,14 @@
 package hua.huase.shanhaicontinent.item.jineng.haotianchui;
 
 import hua.huase.shanhaicontinent.ExampleMod;
+import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcLTLC;
 import hua.huase.shanhaicontinent.handers.HanderAny;
 import hua.huase.shanhaicontinent.item.jineng.JinengMethond;
 import hua.huase.shanhaicontinent.potion.PotionRegistryHandler;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
@@ -72,7 +74,7 @@ public class WuqijnHtcLTLC extends Item implements JinengMethond
         }
 
         if(heldItem.getTagCompound()!=null&&heldItem.getTagCompound().getInteger("nianxian")>0){
-            playerIn.getCooldownTracker().setCooldown(this, (int) (600-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*200));
+            playerIn.getCooldownTracker().setCooldown(this, (int) (10-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*200));
         }else {
             return ActionResult.newResult(EnumActionResult.SUCCESS, heldItem);
         }
@@ -81,7 +83,24 @@ public class WuqijnHtcLTLC extends Item implements JinengMethond
 
         if(!worldIn.isRemote){
 
-            playerIn.addPotionEffect(new PotionEffect(PotionRegistryHandler.Potion_Haotianchui_LTLC,200,0,true,true));
+            List<Entity> list = playerIn.world.getEntitiesWithinAABBExcludingEntity(playerIn, playerIn.getEntityBoundingBox().grow(60.0D,60.0D,60.0D));
+            int i = 0;
+            for (Entity entity : list) {
+
+                if (entity!=null&&entity instanceof EntityLivingBase && entity !=playerIn && i++<=20)
+                {
+                    ((EntityLivingBase)entity).addPotionEffect(new PotionEffect(PotionRegistryHandler.Potion_Wuqijn_JGZ,80,0,true,true));
+
+                    EntityJinengHtcLTLC jiNengThread = new EntityJinengHtcLTLC(worldIn,playerIn);
+                    jiNengThread.setPosition(entity.posX,entity.posY,entity.posZ);
+                    worldIn.spawnEntity(jiNengThread);
+                }
+            }
+
+
+
+
+//            playerIn.addPotionEffect(new PotionEffect(PotionRegistryHandler.Potion_Haotianchui_LTLC,200,0,true,true));
             worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 2.0F, 2.0F);
 
         }

@@ -40,6 +40,7 @@ public class WuHunHuangyishenweizhong extends Item implements JinengMethond
         this.setUnlocalizedName(ExampleMod.MODID + name);
         this.setRegistryName(name);
         this.setCreativeTab(Tabs);
+        setMaxStackSize(1);
         HanderAny.itemList.add(this);
         JinengMethond.addJinengItem(this,"huang");
     }

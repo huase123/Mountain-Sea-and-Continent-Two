@@ -4,10 +4,7 @@ import hua.huase.shanhaicontinent.ExampleMod;
 import hua.huase.shanhaicontinent.client.model.seamentitymob.*;
 import hua.huase.shanhaicontinent.client.renderer.jineng.RenderJiNengItme;
 import hua.huase.shanhaicontinent.client.renderer.jineng.RenderJiNengThread;
-import hua.huase.shanhaicontinent.client.renderer.jineng.haotianchui.RenderJiNengHtcHTZ;
-import hua.huase.shanhaicontinent.client.renderer.jineng.haotianchui.RenderJiNengHtcTDWJ;
-import hua.huase.shanhaicontinent.client.renderer.jineng.haotianchui.RenderJinengHtcHTJJ;
-import hua.huase.shanhaicontinent.client.renderer.jineng.haotianchui.RenderJinengHtcLTYJ;
+import hua.huase.shanhaicontinent.client.renderer.jineng.haotianchui.*;
 import hua.huase.shanhaicontinent.client.renderer.jineng.huang.RenderWuHunHuangBSJ;
 import hua.huase.shanhaicontinent.client.renderer.jineng.huang.RenderWuHunHuangCMJJ;
 import hua.huase.shanhaicontinent.client.renderer.jineng.huang.RenderWuHunHuangKPBS;
@@ -17,10 +14,7 @@ import hua.huase.shanhaicontinent.client.renderer.jineng.jingubang.RenderJiNengF
 import hua.huase.shanhaicontinent.client.renderer.seamentitymob.*;
 import hua.huase.shanhaicontinent.entity.HunhuanEntity;
 import hua.huase.shanhaicontinent.entity.jineng.EntityJiNengThread;
-import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcHTJJ;
-import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcHTZ;
-import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcLTYJ;
-import hua.huase.shanhaicontinent.entity.jineng.haotianchui.EntityJinengHtcTDWJ;
+import hua.huase.shanhaicontinent.entity.jineng.haotianchui.*;
 import hua.huase.shanhaicontinent.entity.jineng.huang.EntityWuHunHuangBSJ;
 import hua.huase.shanhaicontinent.entity.jineng.huang.EntityWuHunHuangCMJJ;
 import hua.huase.shanhaicontinent.entity.jineng.huang.EntityWuHunHuangKPBS;
@@ -67,6 +61,7 @@ public class RenderRegistryHandler
         RenderingRegistry.registerEntityRenderingHandler(EntityJinengHtcTDWJ.class, RenderJiNengHtcTDWJ::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityJinengHtcHTJJ.class, RenderJinengHtcHTJJ::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityJinengHtcLTYJ.class, RenderJinengHtcLTYJ::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityJinengHtcLTLC.class, RenderJiNengHtcLTLC::new);
 
         RenderingRegistry.registerEntityRenderingHandler(SeaMLuoLuoNiao.class, (RenderManager manager) -> new RenderSeaMLuoLuoNiao(manager,new ModelLuoLuoNiao(),"luoluoniao"));
         RenderingRegistry.registerEntityRenderingHandler(SeaMLoong.class, (RenderManager manager) -> new RenderSeaMLoong(manager,new ModelLoong(),"loong"));

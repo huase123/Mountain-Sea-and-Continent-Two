@@ -3,7 +3,7 @@
   "forge_marker": 1,
   "defaults": {
     "model": "minecraft:builtin/generated",
-    "textures": { "layer0": "shanhaicontinent:items/haotainchui/wuqijnhtcltlc" }
+    "textures": { "layer0": "shanhaicontinent:items/haotianchui/wuqijnhtcltlc" }
   },
   "variants": {
     "inventory": [{ "transform": "forge:default-tool" }]

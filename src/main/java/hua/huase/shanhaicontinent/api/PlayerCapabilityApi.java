@@ -29,7 +29,10 @@ public interface PlayerCapabilityApi {
 //        }
 
 //        if(capability.getMonsterCapabilityList()!=null &&(capability.getDengji()+1)/10>capability.getMonsterCapabilityList().size()&&capability.getMonsterCapabilityList().size()<=8 && capability.getJingyan()>=capability.getMaxjingyan()){
-        if(capability.getMonsterCapabilityList()!=null &&(capability.getDengji()+1)/10>capability.getMonsterCapabilityList().size()&&capability.getMonsterCapabilityList().size()<=8 ){
+        if(capability.getMonsterCapabilityList()!=null &&(capability.getDengji()-9)>=capability.getMonsterCapabilityList().size()*10 && capability.getMonsterCapabilityList().size()<=8 ){
+            if((capability.getDengji()-9)==capability.getMonsterCapabilityList().size()*10 && capability.getJingyan()<capability.getMaxjingyan()){
+                return false;
+            }
             return  true;
         }
 
@@ -47,7 +50,7 @@ public interface PlayerCapabilityApi {
             if(sizeMax < stringListEntry.getValue().size()) sizeMax = stringListEntry.getValue().size();
 
         }
-        if(jingyan>=maxjingyan&& (((int)dengji/10)<=sizeMax && dengji<=98)){
+        if((dengji<(sizeMax+1)*10 && dengji<=98)){
             capability.setDengji(dengji+1);
             capability.setJingyan(0);
             capability.setMaxjingyan((int) (maxjingyan*1.1));

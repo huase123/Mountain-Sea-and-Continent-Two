@@ -636,7 +636,7 @@ displayer:jingshenli=所需精神力：%s
 message.addjingshenli.fail=§4%s超过了-10000~10000限制
 
 
-message.addattribute.fail.num=§4%s超过了-10000~10000限制
+message.addattribute.fail.num=§4%s超过了-100000~100000限制
 message.addattribute.fail.attribute=§4%s不存在
 message.addattribute.success=§4%s增加成功
 

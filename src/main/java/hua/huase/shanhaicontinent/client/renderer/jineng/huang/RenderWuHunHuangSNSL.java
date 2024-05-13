@@ -25,6 +25,8 @@ public class RenderWuHunHuangSNSL extends Render<EntityWuHunHuangSNSL>
 
     public void doRender(EntityWuHunHuangSNSL entity, double x, double y, double z, float entityYaw, float partialTicks)
     {
+
+        long randNumLong = entity.world.rand.nextLong();
         Tessellator tessellator = Tessellator.getInstance();
         BufferBuilder bufferbuilder = tessellator.getBuffer();
         GlStateManager.disableTexture2D();
@@ -35,7 +37,7 @@ public class RenderWuHunHuangSNSL extends Render<EntityWuHunHuangSNSL>
         double[] adouble1 = new double[8];
         double d0 = 0.0D;
         double d1 = 0.0D;
-        Random random = new Random(entity.boltVertex);
+        Random random = new Random(randNumLong);
 
         for (int i = 7; i >= 0; --i)
         {
@@ -47,7 +49,7 @@ public class RenderWuHunHuangSNSL extends Render<EntityWuHunHuangSNSL>
 
         for (int k1 = 0; k1 < 4; ++k1)
         {
-            Random random1 = new Random(entity.boltVertex);
+            Random random1 = new Random(randNumLong);
 
             for (int j = 0; j < 3; ++j)
             {
