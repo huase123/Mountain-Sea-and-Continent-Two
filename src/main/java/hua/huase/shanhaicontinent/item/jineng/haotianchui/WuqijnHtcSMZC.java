@@ -23,6 +23,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -126,9 +127,9 @@ public class WuqijnHtcSMZC extends Item implements JinengMethond
         }else {
             list.add(net.minecraft.util.text.translation.I18n.translateToLocal("itembanding.player.fail"));
         }
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.dzsft.list0"));
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.dzsft.list1"));
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.jgzs.list1"));
+        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.haotianchui.jineng.smzc.list0"));
+        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.haotianchui.jineng.smzc.list1"));
+        list.add(I18n.translateToLocal("item.addhunji.list0"));
         if(itemstack.getTagCompound()!=null&&itemstack.getTagCompound().getInteger("nianxian")>0){
             int integer = itemstack.getTagCompound().getInteger("nianxian");
             list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.lingque.cd")

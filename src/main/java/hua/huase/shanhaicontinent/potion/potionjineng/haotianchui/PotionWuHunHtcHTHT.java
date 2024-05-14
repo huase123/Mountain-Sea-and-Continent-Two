@@ -79,7 +79,7 @@ public class PotionWuHunHtcHTHT extends PotionSeaMRender
     public void applyAttributesModifiersToEntity(EntityLivingBase entityLivingBaseIn, AbstractAttributeMap attributeMapIn, int amplifier)
     {
         PlayerCapability capability = entityLivingBaseIn.getCapability(CapabilityRegistryHandler.PLYAER_CAPABILITY, null);
-        capability.addWufang(10000f);
+        capability.addWufang(20000f);
 
         NetworkRegistryHandler.PlayerListen.sendClientCustomPacket((EntityPlayer) entityLivingBaseIn);
 
@@ -92,7 +92,7 @@ public class PotionWuHunHtcHTHT extends PotionSeaMRender
     {
 
         PlayerCapability capability = entityLivingBaseIn.getCapability(CapabilityRegistryHandler.PLYAER_CAPABILITY, null);
-        capability.addWufang(-10000f);
+        capability.addWufang(-20000f);
         NetworkRegistryHandler.PlayerListen.sendClientCustomPacket((EntityPlayer) entityLivingBaseIn);
         attributeMapIn.removeAttributeModifiers(this.Multimap());
         entityLivingBaseIn.setAbsorptionAmount(entityLivingBaseIn.getAbsorptionAmount() - (float)(4 * (amplifier + 1)));

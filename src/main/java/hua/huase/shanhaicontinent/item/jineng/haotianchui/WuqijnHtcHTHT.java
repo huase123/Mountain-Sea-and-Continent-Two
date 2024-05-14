@@ -72,7 +72,7 @@ public class WuqijnHtcHTHT extends Item implements JinengMethond
         }
 
         if(heldItem.getTagCompound()!=null&&heldItem.getTagCompound().getInteger("nianxian")>0){
-            playerIn.getCooldownTracker().setCooldown(this, (int) (600-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*200));
+            playerIn.getCooldownTracker().setCooldown(this, (int) (1200-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*100));
         }else {
             return ActionResult.newResult(EnumActionResult.SUCCESS, heldItem);
         }
@@ -81,7 +81,7 @@ public class WuqijnHtcHTHT extends Item implements JinengMethond
 
         if(!worldIn.isRemote){
 
-            playerIn.addPotionEffect(new PotionEffect(PotionRegistryHandler.Potion_Haotianchui_HTHT,200,0,true,true));
+            playerIn.addPotionEffect(new PotionEffect(PotionRegistryHandler.Potion_Haotianchui_HTHT,400,0,true,true));
             worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 2.0F, 2.0F);
 
         }
@@ -107,9 +107,9 @@ public class WuqijnHtcHTHT extends Item implements JinengMethond
         }else {
             list.add(net.minecraft.util.text.translation.I18n.translateToLocal("itembanding.player.fail"));
         }
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.dzsft.list0"));
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.dzsft.list1"));
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.jgzs.list1"));
+        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.haotianchui.jineng.htht.list0"));
+        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.haotianchui.jineng.htht.list1"));
+        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.haotianchui.jineng.htht.list2"));
         if(itemstack.getTagCompound()!=null&&itemstack.getTagCompound().getInteger("nianxian")>0){
             int integer = itemstack.getTagCompound().getInteger("nianxian");
             list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.lingque.cd")

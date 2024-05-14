@@ -26,7 +26,6 @@ public class EntityJinengHtcHTJJ extends Entity {
 
     private EntityPlayer entityPlayer;
 
-    private int ticksLiving;
 
     private static final DataParameter<Integer> PLAYER_ID =
             EntityDataManager.createKey(EntityJinengItem.class, DataSerializers.VARINT);
@@ -62,9 +61,8 @@ public class EntityJinengHtcHTJJ extends Entity {
     public void onUpdate()
     {
 
-        this.ticksLiving++;
         if(!this.world.isRemote){
-            if(ticksLiving>=1000){
+            if(this.ticksExisted>=200){
                 this.setDead();
                 return;
             }
@@ -72,7 +70,7 @@ public class EntityJinengHtcHTJJ extends Entity {
                 this.setDead();
                 return;
             }
-            if(ticksLiving%20==0){
+            if(this.ticksExisted%20==0){
 
 //                this.setPosition(entityPlayer.posX,entityPlayer.posY,entityPlayer.posZ);
 
@@ -83,7 +81,7 @@ public class EntityJinengHtcHTJJ extends Entity {
                 for (Entity entity : list) {
                     if (entity!=null&&entity instanceof EntityLivingBase && entity !=entityPlayer)
                     {
-                        entity.attackEntityFrom(DamageSource.causePlayerDamage(entityPlayer),entityPlayer.getCapability(CapabilityRegistryHandler.PLYAER_CAPABILITY,null).getWugong()*0.2f);
+                        entity.attackEntityFrom(DamageSource.causePlayerDamage(entityPlayer),entityPlayer.getCapability(CapabilityRegistryHandler.PLYAER_CAPABILITY,null).getWugong()*0.6f);
                         this.world.playSound((EntityPlayer)null, entityPlayer.posX, entityPlayer.posY, entityPlayer.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 2.0F, 2.0F);
 
                     }

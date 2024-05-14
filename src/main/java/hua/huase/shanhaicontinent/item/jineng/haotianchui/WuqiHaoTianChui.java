@@ -106,9 +106,8 @@ public class WuqiHaoTianChui extends ItemSword implements JinengMethond
         }
 
 
-        list.add(I18n.translateToLocal("item.jingubang.list0"));
-        list.add(I18n.translateToLocal("item.jingubang.list1"));
-        list.add(I18n.translateToLocal("item.jingubang.list2"));
+        list.add(I18n.translateToLocal("item.wuhun.wuqihaotianchui.list0"));
+        list.add(I18n.translateToLocal("item.wuhun.wuqihaotianchui.list1"));
         list.add(I18n.translateToLocal("item.addhunji.list0"));
 
         if(itemstack.getTagCompound()!=null){

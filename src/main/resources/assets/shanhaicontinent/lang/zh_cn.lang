@@ -38,29 +38,65 @@ itembanding.player.fail=§8拥有者：§f未知
 item.lingque.cd=§f冷却：§7
 
 
+item.shanhaicontinent.haotianchui.name=§4<浩天圣锤> §f------ §c《武魂果实》
+item.wuhunguoshi.haotianchui.list0=§e服用后自动觉醒武魂§4<浩天圣锤>
+
+
+item.shanhaicontinentwuqihaotianchui.name=§e器武魂-§e浩天圣锤： §f------ §e《极品武魂》
+item.wuhun.wuqihaotianchui.list0=§e技能：§3《淬炼》§f：§7每10级提升5%的物伤、暴击率、爆伤
+item.wuhun.wuqihaotianchui.list1=§e被动效果：§7等级越高攻速越快
+
+item.shanhaicontinentwuqijnhtchtz.name=§e魂技：§b《浩天震》 §f------ 武魂：§e《浩天圣锤》
+item.haotianchui.jineng.htz.list0=§a能在地面上产生威力无比的震动，对前方造成伤害
+item.haotianchui.jineng.htz.list1=§e伤害加成：§9+200%物攻
+
+
+item.shanhaicontinentwuqijnhtchthd.name=§e魂技：§b《浩天护盾》 §f------ 武魂：§e《浩天圣锤》
+item.haotianchui.jineng.hthd.list0=§a防御型技能，能在短时间内产生坚实的防护罩，增加3000防御
+item.haotianchui.jineng.hthd.list1=§e持续时间：§9 10s
+
+item.shanhaicontinentwuqijnhtcsmzc.name=§e魂技：§b《神秘之锤》 §f------ 武魂：§e《浩天圣锤》
+item.haotianchui.jineng.smzc.list0=§e技能：§3《断破》§f：§7每10级提升5%的物伤、暴击率、爆伤
+item.haotianchui.jineng.smzc.list1=§3--副手生效
+
+
+item.shanhaicontinentwuqijnhtctdwj.name=§e魂技：§b《天地无极》 §f------ 武魂：§e《浩天圣锤》
+item.haotianchui.jineng.tdwj.list0=§a发出强大的力量风暴，前方的敌人造成伤害
+item.haotianchui.jineng.tdwj.list1=§e伤害加成：§9+200%物攻
+
+item.shanhaicontinentwuqijnhtchtjj.name=§e魂技：§b《昊天九绝》 §f------ 武魂：§e《浩天圣锤》
+item.haotianchui.jineng.htjj.list0=§a调用全身之力，形成力量风暴，对范围内的敌人照成伤害
+item.haotianchui.jineng.htjj.list1=§e伤害加成：§9+60%物攻
+item.haotianchui.jineng.htjj.list2=§e持续时间：§9 10s
+
+item.shanhaicontinentwuqijnhtchtht.name=§e魂技：§b《昊天护体》 §f------ 武魂：§e《浩天圣锤》
+item.haotianchui.jineng.htht.list0=§a锤影在周身形成一圈能量光罩进行防御
+item.haotianchui.jineng.htht.list1=§e属性加成：§9+20000防御
+item.haotianchui.jineng.htht.list2=§e持续时间：§9 20s
+
+item.shanhaicontinentwuqijnhtcltyj.name=§e魂技：§b《凌天一击》 §f------ 武魂：§e《浩天圣锤》
+item.haotianchui.jineng.ltyj.list0=§a将全身魂力集中于一点迅速发出
+item.haotianchui.jineng.ltyj.list1=§e伤害加成：§9+500%物攻
+
+item.shanhaicontinentwuqijnhtcltlc.name=§e魂技：§b《凌天一击》 §f------ 武魂：§e《浩天圣锤》
+item.haotianchui.jineng.ltlc.list0=§a引动天地之力，降下天雷，对60格范围内的敌人造成无差别的持续伤害
+item.haotianchui.jineng.ltlc.list1=§e伤害加成：§9+300%物攻
+
+
+
 item.shanhaicontinent.jingubang.name=§4<破天神棍> §f------ §c《武魂果实》
 item.wuhunguoshi.jingubang.list0=§e服用后自动觉醒武魂§4<破天神棍>
 
-
-item.shanhaicontinentwuqijingubang.name=§e魂器：§4破天神棍 §f------ §e《极品器武魂》
+item.shanhaicontinentwuqijingubang.name=§e器武魂：§4破天神棍 §f------ §e《极品器武魂》
 item.jingubang.list0=§e技能1：§3《万破》§f：§7每10级增加10%的物攻
 item.jingubang.list1=§e被动效果：§7等级越高攻速越快
 item.jingubang.list2=§e被动效果：§7触及距离§e+2
 item.addhunji.list0=§d有魂技后可用铁砧为武魂添加魂技
 
-
-
 item.shanhaicontinentwuqijnfshy.name=§e魂技：§b《分身化影》 §f------ 武魂：§e《破天神棍》
 item.jingubang.jineng.fshy.list0=§a分出三根破天神棍，对前方造成伤害
 item.jingubang.jineng.fshy.list1=§e伤害加成：§9+200%物攻
 item.jingubang.jineng.fshy.list2=§f冷却：§7 5s
-
-
-item.shanhaicontinentwuqijnfshy.name=§e魂技：§b《分身化影》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.fshy.list0=§a分出三根金箍棒，对前方造成伤害
-item.jingubang.jineng.fshy.list1=§e伤害加成：§9+200%物攻
-item.jingubang.jineng.fshy.list2=§f冷却：§7 5s
-
 
 
 item.shanhaicontinentwuqijnjgz.name=§e魂技：§b《禁锢咒》 §f------ 武魂：§e《破天神棍》
@@ -663,12 +699,14 @@ entity.shanhaicontinent.SeaM_XvanGui.name=玄龟
 
 message.open.hunhuan:huang=§2武魂§4<荒>§2已开启，靠近魂环将自动吸收魂环，R键生成技能
 message.open.hunhuan:jingubang=§2武魂§4<破天神棍>§2已开启，靠近魂环将自动吸收魂环，R键打开技能
+message.open.hunhuan:haotianchui=§2武魂§4<浩天圣锤>§2已开启，靠近魂环将自动吸收魂环，R键打开技能
 message.close.hunhuan:=§2魂环已关闭，将不会自动吸收魂环
 
 wuhun.display.name=§e武魂：
 wuhun.display.close=  §0关
 wuhun.display.open.huang=§4<荒>
 wuhun.display.open.jingubang=§4<破天神棍>
+wuhun.display.open.haotianchui=§4<浩天圣锤>
 open.display=打开属性面板
 
 player.shanhaicontinent.shengming.name=生命:§2%s
@@ -753,6 +791,10 @@ effect.shanhaicontinent.wuqijnjlcy=§4九龙禅音
 
 effect.shanhaicontinent.wuhunhuangbzmzzs=§b不知名至尊术
 effect.shanhaicontinent.wuhunhuanglhbs=§b轮回宝术
+
+
+effect.shanhaicontinent.potion.wuhunhtchtht=§b浩天护体
+effect.shanhaicontinent.potion.wuhunhtchthd=§b浩天护盾
 
 
 advancement.shanhaicontinent.root=§1初到山海

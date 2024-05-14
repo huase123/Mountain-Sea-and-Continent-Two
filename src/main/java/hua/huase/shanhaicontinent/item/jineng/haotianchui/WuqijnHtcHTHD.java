@@ -72,8 +72,7 @@ public class WuqijnHtcHTHD extends Item implements JinengMethond
         }
 
         if(heldItem.getTagCompound()!=null&&heldItem.getTagCompound().getInteger("nianxian")>0){
-            playerIn.getCooldownTracker().setCooldown(this, (int) (10-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*200));
-//            playerIn.getCooldownTracker().setCooldown(this, (int) (600-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*200));
+            playerIn.getCooldownTracker().setCooldown(this, (int) (600-Math.log10(heldItem.getTagCompound().getInteger("nianxian"))*50));
         }else {
             return ActionResult.newResult(EnumActionResult.SUCCESS, heldItem);
         }
@@ -109,14 +108,13 @@ public class WuqijnHtcHTHD extends Item implements JinengMethond
         }else {
             list.add(net.minecraft.util.text.translation.I18n.translateToLocal("itembanding.player.fail"));
         }
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.dzsft.list0"));
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.dzsft.list1"));
-        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.jingubang.jineng.jgzs.list1"));
+        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.haotianchui.jineng.hthd.list0"));
+        list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.haotianchui.jineng.hthd.list1"));
         if(itemstack.getTagCompound()!=null&&itemstack.getTagCompound().getInteger("nianxian")>0){
             int integer = itemstack.getTagCompound().getInteger("nianxian");
             list.add(net.minecraft.util.text.translation.I18n.translateToLocal("item.lingque.cd")
                     +""
-                    + new BigDecimal(60-Math.log10(integer)*5).setScale(2, BigDecimal.ROUND_HALF_UP).floatValue()
+                    + new BigDecimal(30-Math.log10(integer)*2.5).setScale(2, BigDecimal.ROUND_HALF_UP).floatValue()
                     +"s"
             );
         }
