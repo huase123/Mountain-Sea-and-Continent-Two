@@ -67,7 +67,6 @@ public class LivingDeathSynchronous {
         EntityPlayer player = event.getEntityPlayer();
         if(player!=null && !player.world.isRemote){
 
-
             for (EntityEquipmentSlot entityequipmentslot : EntityEquipmentSlot.values()) {
                 ItemStack from = player.getItemStackFromSlot(entityequipmentslot);
                 if (!from.isEmpty() && from.getItem()instanceof JinengMethond && from.getTagCompound()!=null && from.getTagCompound().getString("playername").equals(player.getName()))
@@ -75,14 +74,16 @@ public class LivingDeathSynchronous {
                     ((JinengMethond) from.getItem()).removeAttributeModifiers(from,player,entityequipmentslot);
 //                    from.setCount(0);
                 }
-
-
                 if (!from.isEmpty() && from.getItem()instanceof ArmorApi )
                 {
                     ((ArmorApi) from.getItem()).removeAttributeModifiers(from,player,entityequipmentslot);
 //                    from.setCount(0);
                 }
-
+            }
+//            异界死亡同步血量
+            PlayerCapability capability = player.getCapability(CapabilityRegistryHandler.PLYAER_CAPABILITY, null);
+            if(capability!=null){
+                player.setHealth(capability.getMaxshengming()*.4f);
             }
         }
 

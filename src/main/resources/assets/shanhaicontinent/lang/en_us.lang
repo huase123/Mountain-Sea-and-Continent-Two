@@ -1,834 +1,833 @@
 
-Shanhai Continent description=山海大陆：宇宙之初，混沌演化，造化之气，造化万物，山川海势，万物而生
-join world=：§2-%s-§f来到了山海大陆———-§e山海大陆：§b宇宙之初，混沌演化，造化之气，造化万物，山川海势，万物而生
+Shanhai Continent description=Mountain, Sea, and Continent: At the beginning of the universe, chaotic evolution, the energy of creation, the creation of all things, the momentum of mountains, rivers, and seas, and the birth of all things
+join world=：§2-%s-§fArriving at the Shanhai Continent - §e Shanhai Continent: §b At the beginning of the universe, chaotic evolution, the energy of creation, the creation of all things, the terrain of mountains, rivers, and seas, and the birth of all things
 
-tile.shanhaicontinentpot.name=§e造化炉
-zhaohualu_list1=§6-------§d一生二§6-------
-zhaohualu_list2=§6-------§a二生三§6-------
-zhaohualu_list3=§6=======§c三生万物§6=======
-zhaohualu_list4=§f++++++§b夺天地之造化，炼制丹药§f++++++
+tile.shanhaicontinentpot.name=§eManufacturing furnace
+zhaohualu_list1=§6-------§dOne Life Two§6-------
+zhaohualu_list2=§6-------§aTwo to three§6-------
+zhaohualu_list3=§6=======§cThe Three Lives and All Things§6=======
+zhaohualu_list4=§f++++++§bSeize the creation of heaven and earth, refine pills§f++++++
 
-item.shanhaicontinenttextpickaxe.name=§c伪神器 §f§k****** §e《开天镐》
-kaitianfu_list1=§6-------§d穿梭太虚，开天辟地§6-------
-kaitianfu_list2=§6-------§a丢钻石矿石上可开辟虚空§6-------
-kaitianfu_list3=§6=======§c§k******************§6=======
-kaitianfu_list4=§f++++++§0上古十大神器之一§f++++++
+item.shanhaicontinenttextpickaxe.name=§C Pseudoartifact §f §k ****** §e "Kaitian Hao"
+kaitianfu_list1=§6------ §d Shuttle through the void, creating a new world. §6-------
+kaitianfu_list2=§6-- §a Throwing diamond ore can open up void §6-------
+kaitianfu_list3=§6====§c§k******************§6=======
+kaitianfu_list4=One of the top ten ancient artifacts, §f++++++
 
 
-item.shanhaicontinenttextsword.name=§c伪神器 §f§k****** §e《圣道之剑》
-shendaozhijianlist1=§6-------§d斩妖除魔，维护正道§6-------
-shendaozhijianlist2=§6-------§a蕴含着极为强大的力量，是一把斩妖除魔的神剑§6-------
+item.shanhaicontinenttextsword.name=§C Pseudoartifact §f §k ****** §e "Sword of the Way"
+shendaozhijianlist1=§6-------§D Slash demons and eliminate them, maintain the right path §6-------
+shendaozhijianlist2=§6-------§a contains extremely powerful power and is a divine sword that slays demons and eliminates them. §6-------
 shendaozhijianlist3=§6=======§c§k******************§6=======
-shendaozhijianlist4=§f++++++§0上古十大神器之一§f++++++
+shendaozhijianlist4=§f++++++One of the top ten ancient artifacts, f++++++
 
 
-item.shanhaicontinent.lianyaohu.name=§c伪神器 §f§k****** §e《炼妖壶》
-lianyaohu_list0=-------§dd天下妖族的克星§6-------
-lianyaohu_list1=§f++++++§0上古十大神器之一§f++++++
-lianyaohu_kong=空
-lianyaohu.health=血量：§e%s
-lianyaohu.mob_name=§b名字：§e%s
+item.shanhaicontinent.lianyaohu.name=§c Pseudoartifact §f §k ******* §e "Refining Demon Pot"
+lianyaohu_list0=-------§dd: The nemesis of the demon race in the world §6-------
+lianyaohu_list1=§f++++++§0One of the top ten ancient artifacts, §f++++++
+lianyaohu_kong=empty
+lianyaohu.health=Blood volume：§e%s
+lianyaohu.mob_name=§bName: §e%s
 
 
-message.lianyaohu.fail=炼化失败，§6精神力不足§b%s
+message.lianyaohu.fail=Refining failed, §6 lacks spiritual power §b%s
 
-itembanding.player.sccuess=§8拥有者：
-itembanding.player.fail=§8拥有者：§f未知
+itembanding.player.sccuess=§8Owner:
+itembanding.player.fail=§8 Owners: §f Unknown
 
-item.lingque.cd=§f冷却：§7
-
-
-item.shanhaicontinent.jingubang.name=§4<破天神棍> §f------ §c《武魂果实》
-item.wuhunguoshi.jingubang.list0=§e服用后自动觉醒武魂§4<破天神棍>
+item.lingque.cd=§fCooling: §7
 
 
-item.shanhaicontinentwuqijingubang.name=§e魂器：§4破天神棍 §f------ §e《极品器武魂》
-item.jingubang.list0=§e技能1：§3《万破》§f：§7每10级增加10%的物攻
-item.jingubang.list1=§e被动效果：§7等级越高攻速越快
-item.jingubang.list2=§e被动效果：§7触及距离§e+2
-item.addhunji.list0=§d有魂技后可用铁砧为武魂添加魂技
+item.shanhaicontinent.haotianchui.name=§4<Haotian Holy Hammer>§f ------ §c "Martial Soul Fruit"
+item.wuhunguoshi.haotianchui.list0=§eAutomatically awaken martial soul after taking §4<Haotian Holy Hammer>
 
 
+item.shanhaicontinentwuqihaotianchui.name=§eMartial Soul - §e Haotian Holy Hammer: §f -- §e "Ultimate Martial Soul"
+item.wuhun.wuqihaotianchui.list0=§E Skill: §3 "Refining" §f: §7 Increase material damage, critical hit rate, and explosive damage by 5%every 10 levels
+item.wuhun.wuqihaotianchui.list1=§ePassive effect: §7 The higher the level, the faster the attack speed
 
-item.shanhaicontinentwuqijnfshy.name=§e魂技：§b《分身化影》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.fshy.list0=§a分出三根破天神棍，对前方造成伤害
-item.jingubang.jineng.fshy.list1=§e伤害加成：§9+200%物攻
-item.jingubang.jineng.fshy.list2=§f冷却：§7 5s
-
-
-item.shanhaicontinentwuqijnfshy.name=§e魂技：§b《分身化影》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.fshy.list0=§a分出三根金箍棒，对前方造成伤害
-item.jingubang.jineng.fshy.list1=§e伤害加成：§9+200%物攻
-item.jingubang.jineng.fshy.list2=§f冷却：§7 5s
+item.shanhaicontinentwuqijnhtchtz.name=§eSoul Skill: §b "Heavenly Shock" §f -- Martial Soul: §e "Heavenly Hammer"
+item.haotianchui.jineng.htz.list0=§aCan generate powerful vibrations on the ground, causing damage to the front
+item.haotianchui.jineng.htz.list1=§eDamage bonus: §9+200%physical attack
 
 
+item.shanhaicontinentwuqijnhtchthd.name=§eSoul Skill: §b "Heavenly Shield" §f -- Martial Soul: §e "Heavenly Hammer"
+item.haotianchui.jineng.hthd.list0=§aDefensive skill that can generate a solid protective shield in a short period of time, increasing defense by 3000
+item.haotianchui.jineng.hthd.list1=§eDuration: §9 10s
 
-item.shanhaicontinentwuqijnjgz.name=§e魂技：§b《禁锢咒》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.jgz.list0=§a禁锢8格范围内的敌人
-item.jingubang.jineng.jgz.list1=§e持续时间：§9 8s
-item.jingubang.jineng.jgz.list2=§f冷却：§7 20s
-
-
-
-item.shanhaicontinentwuqijndh.name=§e魂技：§b《定海》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.dh.list0=§a以自身为中心，形成一个魂力漩涡，对5格范围内的敌人造成伤害
-item.jingubang.jineng.dh.list1=§e伤害加成：§9+160%物攻
-item.jingubang.jineng.dh.list2=§f冷却：§7 8s
+item.shanhaicontinentwuqijnhtcsmzc.name=§eSoul Skill: §b "Mysterious Hammer" §f - Martial Soul: §e "Heavenly Holy Hammer"
+item.haotianchui.jineng.smzc.list0=§eSkill: §3 "Breaking" §f: §7 Increase physical damage, critical hit rate, and explosive damage by 5%every 10 levels
+item.haotianchui.jineng.smzc.list1=§3--Deputy effective
 
 
+item.shanhaicontinentwuqijnhtctdwj.name=§eSoul skill: §b "Infinity of Heaven and Earth" §f -- Martial soul: §e "Heavenly Holy Hammer"
+item.haotianchui.jineng.tdwj.list0=§aUnleash a powerful storm of power, causing damage to enemies ahead
+item.haotianchui.jineng.tdwj.list1=§eDamage bonus: §9+200%physical attack
 
+item.shanhaicontinentwuqijnhtchtjj.name=§eSoul Skill: §b "Nine Wonders of the Heavenly Sky" §f -- Martial Soul: §e "Holy Hammer of the Heavenly Sky"
+item.haotianchui.jineng.htjj.list0=§aUse full body power to form a power storm, dealing damage to enemies within range
+item.haotianchui.jineng.htjj.list1=§eDamage bonus: §9+60%physical attack
+item.haotianchui.jineng.htjj.list2=§eDuration: §9 10s
 
-item.shanhaicontinentwuqijnjdy.name=§e魂技：§b《金斗云》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.jdy.list0=§a武魂分出一些魂力可以使自己超速行驶
-item.jingubang.jineng.jdy.list1=§e持续时间：§9 20s
-item.jingubang.jineng.jdy.list2=§f冷却：§7 50s
+item.shanhaicontinentwuqijnhtchtht.name=§eSoul Skill: §b "Heavenly Protection" §f -- Martial Soul: §e "Heavenly Holy Hammer"
+item.haotianchui.jineng.htht.list0=§aHammer Shadow forms an energy shield around its body for defense
+item.haotianchui.jineng.htht.list1=§eAttribute bonus: §9+20000 Defense
+item.haotianchui.jineng.htht.list2=§eDuration: §9 20s
 
+item.shanhaicontinentwuqijnhtcltyj.name=§eSoul Skill: §b "Lingtian Strike" §f -- Martial Soul: §e "Haotian Holy Hammer"
+item.haotianchui.jineng.ltyj.list0=§aConcentrate all your soul power at one point and quickly release it
+item.haotianchui.jineng.ltyj.list1=§eDamage bonus: §9+500%physical attack
 
-
-
-item.shanhaicontinentwuqijnjlcy.name=§e魂技：§b《九龙禅音》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.jlcy.list0=§a身旁召唤九龙并发出令人长时间眩晕的禅音，对15格范围内的敌人施加减速和伤害
-item.jingubang.jineng.jlcy.list1=§e持续时间：§9 20s §e伤害加成：§9+10%物攻
-item.jingubang.jineng.jlcy.list2=§f冷却：§7 40s
+item.shanhaicontinentwuqijnhtcltlc.name=§eSoul skill: §b "Falling Thunder Hammer" §f -- Martial soul: §e "Heavenly Holy Hammer"
+item.haotianchui.jineng.ltlc.list0=§aActivate the power of heaven and earth, drop thunder, and deal indiscriminate continuous damage to enemies within a 60 square range
+item.haotianchui.jineng.ltlc.list1=§eDamage bonus: §9+300%physical attack
 
 
 
+item.shanhaicontinent.jingubang.name=§4<Breaking Heavenly God Stick>§f - -- §c "Martial Soul Fruit"
+item.wuhunguoshi.jingubang.list0=§eAutomatically awaken martial soul after taking §4<Breaking Heaven God Staff>
+
+item.shanhaicontinentwuqijingubang.name=§eWeapon and Martial Soul: §4 Breaking Heaven God Staff §f - -- §e "Ultimate Weapon and Martial Soul"
+item.jingubang.list0=§eSkill 1: §3 "Wan Po" §f: §7 Increase physical attack by 10%every 10 levels
+item.jingubang.list1=§ePassive effect: §7 The higher the level, the faster the attack speed
+item.jingubang.list2=§ePassive effect: §7 Touch distance §e+2
+item.addhunji.list0=§dAfter obtaining soul skills, you can use an anvil to add soul skills to the martial soul
+
+item.shanhaicontinentwuqijnfshy.name=§eSoul Skill: §b "Phantom Transformation" §f -- Martial Soul: §e "Sky Breaking Divine Stick"
+item.jingubang.jineng.fshy.list0=§aSplit out three Sky Breaking Divine Staff, causing damage to the front
+item.jingubang.jineng.fshy.list1=§eDamage bonus: §9+200%physical attack
+item.jingubang.jineng.fshy.list2=§fCooling: §7 5s
 
 
-item.shanhaicontinentwuqijnjgzs.name=§e魂技：§b《金箍真身》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.jgzs.list0=§a自己与破天神棍融为一体，提升自身3000物攻，50%爆伤，20%爆率
-item.jingubang.jineng.jgzs.list1=§e持续时间：§9 50s
-item.jingubang.jineng.jgzs.list2=§f冷却：§7 100s
+item.shanhaicontinentwuqijnjgz.name=§eSoul Skill: §b "Imprisonment Curse" §f -- Martial Soul: §e "Sky Breaking Divine Stick"
+item.jingubang.jineng.jgz.list0=§aImprison enemies within a range of 8 squares
+item.jingubang.jineng.jgz.list1=§eDuration: §9 8s
+item.jingubang.jineng.jgz.list2=§fCooling: §7 20s
 
+item.shanhaicontinentwuqijndh.name=§eSoul Skill: §b "Dinghai" §f -- Martial Soul: §e "Sky Breaking Divine Stick"
+item.jingubang.jineng.dh.list0=§aForm a soul power vortex centered around oneself, dealing damage to enemies within a 5-grid range
+item.jingubang.jineng.dh.list1=§eDamage bonus: §9+160%physical attack
+item.jingubang.jineng.dh.list2=§fCooling: §7 8s
 
+item.shanhaicontinentwuqijnjdy.name=§eSoul skill: §b "Golden Douyun" §f -- Martial soul: §e "Breaking Sky Divine Stick"
+item.jingubang.jineng.jdy.list0=§aThe martial soul can release some soul power to make oneself exceed the speed limit
+item.jingubang.jineng.jdy.list1=§eDuration: §9 20s
+item.jingubang.jineng.jdy.list2=§fCooling: §7 50s
 
+item.shanhaicontinentwuqijnjlcy.name=§eSoul skill: §b "Nine Dragon Zen Sound" §f -- Martial soul: §e "Breaking Heaven Divine Stick"
+item.jingubang.jineng.jlcy.list0=§aSummoning the Nine Dragons beside you and emitting a dizzying Zen sound for a long time, inflicting deceleration and damage on enemies within a 15 square range
+item.jingubang.jineng.jlcy.list1=§eDuration: §9 20s §e Damage bonus: §9+10%physical attack
+item.jingubang.jineng.jlcy.list2=§fCooling: §7 40s
 
-item.shanhaicontinentwuqijndzsy.name=§e魂技：§b《斗战圣域》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.dzsy.list0=§a周身形成超强的领域，所有跨入领域的人会受到红莲业火的焚烧，而自己不断增强
-item.jingubang.jineng.dzsy.list1=§e效果：§9 伤害+20%的物攻，每5秒增加1000物攻、20爆伤、10爆率，范围10格
-item.jingubang.jineng.dzsy.list2=§e持续时间：§9 50s §f冷却：§7 100s
+item.shanhaicontinentwuqijnjgzs.name=§eSoul Skill: §b "Golden Hoop True Body" §f -- Martial Soul: §e "Sky Breaking Divine Stick"
+item.jingubang.jineng.jgzs.list0=§aIntegrate oneself with the Sky Breaking God Staff, increase oneself by 3000 physical attacks, 50%critical damage, and 20%critical rate
+item.jingubang.jineng.jgzs.list1=§eDuration: §9 50s
+item.jingubang.jineng.jgzs.list2=§fCooling: §7 100s
 
+item.shanhaicontinentwuqijndzsy.name=§eSoul Skill: §b "Battle of the Holy Realm" §f -- Martial Soul: §e "Sky Breaking Divine Stick"
+item.jingubang.jineng.dzsy.list0=§aA super strong field is formed around the body, and all those who enter the field will be burned by the fire of the Red Lotus industry, while constantly strengthening themselves
+item.jingubang.jineng.dzsy.list1=§eeffect：§9 Damage+20%physical attack, increases 1000 physical attacks, 20 explosive damage, and 10 explosive rate every 5 seconds, with a range of 10 squares
+item.jingubang.jineng.dzsy.list2=§eDuration: §9 50s §f Cooling: §7 100s
 
+item.shanhaicontinentwuqijndzsft.name=§eSoul Skill: §b "Defeating Buddha Body" §f -- Martial Soul: §e "Breaking Heaven Divine Stick"
+item.jingubang.jineng.dzsft.list0=§aThe ancient divine king possessed and dealt damage to enemies within a 20 square range
+item.jingubang.jineng.dzsft.list1=§eEffect: §9+9999 physical attack and defense, 100 explosion rate, 100 explosive damage §e damage bonus: §9+300%physical attack
+item.jingubang.jineng.dzsft.list2=§eDuration: §9 30s §f Cooling: §7 60s
 
+item.shanhaicontinent.huang.name=§4<Wilderness>§f - -- §c "Fruit of Martial Soul"
+item.wuhunguoshi.huang.list0=§eAfter taking it, automatically awaken the martial soul §4<Wilderness>
 
+item.shanhaicontinentwuhunhuangyishenweizhong.name=§eMartial Soul - Wilderness: §f - -- §e "Ultimate Martial Soul"
+item.wuhun.huang.yishenweizhong.list0=§eSkill 1: §3 "As a Seed" §f: §7 Increase physical attack, defense, true damage, explosive damage, resistance, and recovery by 4%every 10 levels
+item.wuhun.huang.yishenweizhong.list1=§ePassive effect: §7 The higher the level, the faster the attack speed
+item.wuhun.huang.yishenweizhong.list2=§3--Deputy effective
 
-item.shanhaicontinentwuqijndzsft.name=§e魂技：§b《斗战胜佛体》 §f------ 武魂：§e《破天神棍》
-item.jingubang.jineng.dzsft.list0=§a上古神王附体,并对20格范围内的敌人造成伤害
-item.jingubang.jineng.dzsft.list1=§e效果：§9 +9999物攻、物防，100爆率，100的爆伤 §e伤害加成：§9+300%物攻
-item.jingubang.jineng.dzsft.list2=§e持续时间：§9 30s §f冷却：§7 60s
+item.shanhaicontinentwuhunhuangkpbs.name=§eSoul Skill: §b "Kunpeng Treasure Technique" §f -- Martial Soul: §e "Wilderness"
+item.wuhun.huang.kpbs.list0=§aMove forward and deal damage to passing enemies
+item.wuhun.huang.kpbs.list1=§eDamage bonus: §9+200%physical attack
+item.wuhun.huang.kpbs.list2=§fCooling: §7 10s
 
+item.shanhaicontinentwuhunhuangsnsl.name=§eSoul Skill: §b "Lion Dragon God Thunder" §f -- Martial Soul: §e "Wilderness"
+item.wuhun.huang.snsl.list0=§aSummoning lightning to strike the ground
+item.wuhun.huang.snsl.list1=§eDamage bonus: §9+200%physical attack
+item.wuhun.huang.snsl.list2=§fCooling: §7 6s
 
+item.shanhaicontinentwuhunhuanglsf.name=§eSoul Skill: §b "Willow God Technique" §f -- Martial Soul: §e "Wilderness"
+item.wuhun.huang.lsf.list0=§aDeal damage to enemies within a range of 8 squares and restore health
+item.wuhun.huang.lsf.list1=§eDamage bonus: §9+100%physical attack §a Recovery: §a has lost 50%of its health
+item.wuhun.huang.lsf.list2=§fCooling: §7 12s
 
+item.shanhaicontinentwuhunhuangcmjj.name=§eSoul Skill: §b "Grass Killing Sword Technique" §f -- Martial Soul: §e "Wilderness"
+item.wuhun.huang.cmjj.list0=§aA blade of grass can cut off the sun, moon, and stars! Pick out a sword and deal damage to a large area of enemies ahead
+item.wuhun.huang.cmjj.list1=§eDamage bonus: §9+500%physical attack
+item.wuhun.huang.cmjj.list2=§fCooling: §7 20s
 
-item.shanhaicontinent.huang.name=§4<荒> §f------ §c《武魂果实》
-item.wuhunguoshi.huang.list0=§e服用后自动觉醒武魂§4<荒>
-
-
-
-item.shanhaicontinentwuhunhuangyishenweizhong.name=§e武魂-荒： §f------ §e《极品武魂》
-item.wuhun.huang.yishenweizhong.list0=§e技能1：§3《以身为种》§f：§7每10级提升4%的物攻、物防、真伤、爆伤、抗暴、回复
-item.wuhun.huang.yishenweizhong.list1=§e被动效果：§7等级越高攻速越快
-item.wuhun.huang.yishenweizhong.list2=§3--副手生效
-
-
-item.shanhaicontinentwuhunhuangkpbs.name=§e魂技：§b《鲲鹏宝术》 §f------ 武魂：§e《荒》
-item.wuhun.huang.kpbs.list0=§a向前位移，对路过的敌人造成伤害
-item.wuhun.huang.kpbs.list1=§e伤害加成：§9+200%物攻
-item.wuhun.huang.kpbs.list2=§f冷却：§7 10s
-
-
-item.shanhaicontinentwuhunhuangsnsl.name=§e魂技：§b《狻猊神雷》 §f------ 武魂：§e《荒》
-item.wuhun.huang.snsl.list0=§a召唤雷电轰击地面
-item.wuhun.huang.snsl.list1=§e伤害加成：§9+200%物攻
-item.wuhun.huang.snsl.list2=§f冷却：§7 6s
-
-item.shanhaicontinentwuhunhuanglsf.name=§e魂技：§b《柳神法》 §f------ 武魂：§e《荒》
-item.wuhun.huang.lsf.list0=§a对8格范围内的敌人造成伤害，并回复生命值
-item.wuhun.huang.lsf.list1=§e伤害加成：§9+100%物攻  §a回复：§a已损失生命值的50%生命值
-item.wuhun.huang.lsf.list2=§f冷却：§7 12s
-
-
-item.shanhaicontinentwuhunhuangcmjj.name=§e魂技：§b《草灭剑诀》 §f------ 武魂：§e《荒》
-item.wuhun.huang.cmjj.list0=§a一株草可斩日月星辰!挑出一剑，对前方大范围敌人伤害
-item.wuhun.huang.cmjj.list1=§e伤害加成：§9+500%物攻
-item.wuhun.huang.cmjj.list2=§f冷却：§7 20s
-
-
-item.shanhaicontinentwuhunhuangldlhg.name=§e魂技：§b《六道轮回天功》 §f------ 武魂：§e《荒》
-item.wuhun.huang.ldlhg.list0=§a刷新所有技能冷却
+item.shanhaicontinentwuhunhuangldlhg.name=§eSoul Skill: §b "Six Paths Reincarnation Heavenly Skill" §f -- Martial Soul: §e "Wilderness"
+item.wuhun.huang.ldlhg.list0=§aRefresh all skill cooldowns
 item.wuhun.huang.ldlhg.list1=
-item.wuhun.huang.ldlhg.list2=§f冷却：§7 20s
+item.wuhun.huang.ldlhg.list2=§fCooling: §7 20s
 
+item.shanhaicontinentwuhunhuanglhbs.name=§eSoul Skill: §b "Reincarnation Treasure Technique" §f -- Martial Soul: §e "Wilderness"
+item.wuhun.huang.lhbs.list0=§aResurrected from fatal damage with full health
+item.wuhun.huang.lhbs.list1=§eDuration: §9 100s
+item.wuhun.huang.lhbs.list2=§fCooling: §7 300s
 
-item.shanhaicontinentwuhunhuanglhbs.name=§e魂技：§b《轮回宝术》 §f------ 武魂：§e《荒》
-item.wuhun.huang.lhbs.list0=§a受到致命伤满血复活
-item.wuhun.huang.lhbs.list1=§e持续时间：§9 100s
-item.wuhun.huang.lhbs.list2=§f冷却：§7 300s
+item.shanhaicontinentwuhunhuangbsq.name=§eSoul Skill: §b "Swordsmanship" §f -- Martial Soul: §e "Wilderness"
+item.wuhun.huang.bsq.list0=§aCause damage to the individual ahead
+item.wuhun.huang.bsq.list1=§eDamage bonus: §9+1000%physical attack
+item.wuhun.huang.bsq.list2=§fCooling: §7 20s
 
+item.shanhaicontinentwuhunhuangbzmzzs.name=§eSoul Skill: §b "Unknown Supreme Art" §f -- Martial Soul: §e "Wilderness"
+item.wuhun.huang.bzmzzs.list0=§aPhysical Attack+6666, Physical Defense+6666, Critical Damage+66, Burst Rate+66, Recovery+666, Vampire+66
+item.wuhun.huang.bzmzzs.list1=§eDuration: §9 50s
+item.wuhun.huang.bzmzzs.list2=§fCooling: §7 100s
 
-item.shanhaicontinentwuhunhuangbsq.name=§e魂技：§b《抱剑杀》 §f------ 武魂：§e《荒》
-item.wuhun.huang.bsq.list0=§a对前方单体造成伤害
-item.wuhun.huang.bsq.list1=§e伤害加成：§9+1000%物攻
-item.wuhun.huang.bsq.list2=§f冷却：§7 20s
+item.shanhaicontinenttrunkbone.name=§cTrunk bones §f §k ****** §e "Ancient Mysterious Bones"
+item.shanhaicontinentrightlegbone.name=§cRight leg bone §f §k ****** §e "Ancient Mysterious Bones"
+item.shanhaicontinentrighthandbone.name=§cRight arm bone §f §k ****** §e "Ancient Mysterious Bones"
+item.shanhaicontinentleftlegbone.name=§cLeft leg bone §f §k ****** §e "Ancient Mysterious Bone"
+item.shanhaicontinentlefthandbone.name=§cLeft arm bone §f §k ****** §e "Ancient Mysterious Bone"
+item.shanhaicontinentheadbone.name=§cSkull §f §k ****** §e "Ancient Mysterious Bones"
+item.shanhaicontinentexoskeletonbone.name=§cExternal Bones §f §k ****** §e "Ancient Mysterious Bones"
+item.armor.huang.butao.list0=§dSoul armor of the same level can be upgraded with an anvil
+item.shanhaicontinent.butao.head_grade0.name=§aSoul Helmet Level I
+item.shanhaicontinent.butao.head_grade1.name=§aSoul Helmet Level II
+item.shanhaicontinent.butao.head_grade2.name=§bSoul Helmet Level III
+item.shanhaicontinent.butao.head_grade3.name=§bSoul Helmet Level IV
+item.shanhaicontinent.butao.head_grade4.name=§cSoul Helmet Level V
+item.shanhaicontinent.butao.head_grade5.name=§cSoul Helmet Level VI
+item.shanhaicontinent.butao.head_grade6.name=§dSoul Helmet Level VII
+item.shanhaicontinent.butao.head_grade7.name=§dSoul Helmet Level VIII
+item.shanhaicontinent.butao.head_grade8.name=§eSoul Helmet Level IX
+item.shanhaicontinent.butao.head_grade9.name=§eSoul Helmet Level X
+item.shanhaicontinent.butao.head_grade10.name=§7Soul Helmet Level XI
+item.shanhaicontinent.butao.head_grade11.name=§7Soul Helmet Level XII
+item.shanhaicontinent.butao.head_grade12.name=§6Soul Helmet Level XIII
+item.shanhaicontinent.butao.head_grade13.name=§6Soul Helmet Level XIV
+item.shanhaicontinent.butao.head_grade14.name=§5Soul Helmet Level XV
+item.shanhaicontinent.butao.head_grade15.name=§4Soul Helmet Level XVI
 
+item.shanhaicontinent.butao.chest_grade0.name=§aSoul breastplate******Ⅰ阶
+item.shanhaicontinent.butao.chest_grade1.name=§aSoul breastplate******Ⅱ阶
+item.shanhaicontinent.butao.chest_grade2.name=§bSoul breastplate******Ⅲ阶
+item.shanhaicontinent.butao.chest_grade3.name=§bSoul breastplate******Ⅳ阶
+item.shanhaicontinent.butao.chest_grade4.name=§cSoul breastplate******Ⅴ阶
+item.shanhaicontinent.butao.chest_grade5.name=§cSoul breastplate******Ⅵ阶
+item.shanhaicontinent.butao.chest_grade6.name=§dSoul breastplate******Ⅶ阶
+item.shanhaicontinent.butao.chest_grade7.name=§dSoul breastplate******Ⅷ阶
+item.shanhaicontinent.butao.chest_grade8.name=§eSoul breastplate******Ⅸ阶
+item.shanhaicontinent.butao.chest_grade9.name=§eSoul breastplate******Ⅹ阶
+item.shanhaicontinent.butao.chest_grade10.name=§7Soul breastplate******Ⅺ阶
+item.shanhaicontinent.butao.chest_grade11.name=§7Soul breastplate******Ⅻ阶
+item.shanhaicontinent.butao.chest_grade12.name=§6Soul breastplate******ⅩⅢ阶
+item.shanhaicontinent.butao.chest_grade13.name=§6Soul breastplate******ⅩⅣ阶
+item.shanhaicontinent.butao.chest_grade14.name=§5Soul breastplate******ⅩⅤ阶
+item.shanhaicontinent.butao.chest_grade15.name=§4Soul breastplate******ⅩⅥ阶
 
-item.shanhaicontinentwuhunhuangbzmzzs.name=§e魂技：§b《不知名至尊术》 §f------ 武魂：§e《荒》
-item.wuhun.huang.bzmzzs.list0=§a物攻+6666、物防+6666、爆伤+66、爆率+66、回复+666，吸血+66
-item.wuhun.huang.bzmzzs.list1=§e持续时间：§9 50s
-item.wuhun.huang.bzmzzs.list2=§f冷却：§7 100s
+item.shanhaicontinent.butao.legs_grade0.name=§aSoul Shinguard******Ⅰ阶
+item.shanhaicontinent.butao.legs_grade1.name=§aSoul Shinguard******Ⅱ阶
+item.shanhaicontinent.butao.legs_grade2.name=§bSoul Shinguard******Ⅲ阶
+item.shanhaicontinent.butao.legs_grade3.name=§bSoul Shinguard******Ⅳ阶
+item.shanhaicontinent.butao.legs_grade4.name=§cSoul Shinguard******Ⅴ阶
+item.shanhaicontinent.butao.legs_grade5.name=§cSoul Shinguard******Ⅵ阶
+item.shanhaicontinent.butao.legs_grade6.name=§dSoul Shinguard******Ⅶ阶
+item.shanhaicontinent.butao.legs_grade7.name=§dSoul Shinguard******Ⅷ阶
+item.shanhaicontinent.butao.legs_grade8.name=§eSoul Shinguard******Ⅸ阶
+item.shanhaicontinent.butao.legs_grade9.name=§eSoul Shinguard******Ⅹ阶
+item.shanhaicontinent.butao.legs_grade10.name=§7Soul Shinguard******Ⅺ阶
+item.shanhaicontinent.butao.legs_grade11.name=§7Soul Shinguard******Ⅻ阶
+item.shanhaicontinent.butao.legs_grade12.name=§6Soul Shinguard******ⅩⅢ阶
+item.shanhaicontinent.butao.legs_grade13.name=§6Soul Shinguard******ⅩⅣ阶
+item.shanhaicontinent.butao.legs_grade14.name=§5Soul Shinguard******ⅩⅤ阶
+item.shanhaicontinent.butao.legs_grade15.name=§4Soul Shinguard******ⅩⅥ阶
 
-
-
-item.shanhaicontinenttrunkbone.name=§c躯干骨 §f§k****** §e《上古神秘骨》
-
-item.shanhaicontinentrightlegbone.name=§c右腿骨 §f§k****** §e《上古神秘骨》
-item.shanhaicontinentrighthandbone.name=§c右臂骨 §f§k****** §e《上古神秘骨》
-
-item.shanhaicontinentleftlegbone.name=§c左腿骨 §f§k****** §e《上古神秘骨》
-
-item.shanhaicontinentlefthandbone.name=§c左臂骨 §f§k****** §e《上古神秘骨》
-
-item.shanhaicontinentheadbone.name=§c头骨 §f§k****** §e《上古神秘骨》
-
-item.shanhaicontinentexoskeletonbone.name=§c外附骨 §f§k****** §e《上古神秘骨》
-
-item.armor.huang.butao.list0=§d同品阶的魂甲可用铁砧升级
-
-item.shanhaicontinent.butao.head_grade0.name=§a魂头盔******Ⅰ阶
-item.shanhaicontinent.butao.head_grade1.name=§a魂头盔******Ⅱ阶
-item.shanhaicontinent.butao.head_grade2.name=§b魂头盔******Ⅲ阶
-item.shanhaicontinent.butao.head_grade3.name=§b魂头盔******Ⅳ阶
-item.shanhaicontinent.butao.head_grade4.name=§c魂头盔******Ⅴ阶
-item.shanhaicontinent.butao.head_grade5.name=§c魂头盔******Ⅵ阶
-item.shanhaicontinent.butao.head_grade6.name=§d魂头盔******Ⅶ阶
-item.shanhaicontinent.butao.head_grade7.name=§d魂头盔******Ⅷ阶
-item.shanhaicontinent.butao.head_grade8.name=§e魂头盔******Ⅸ阶
-item.shanhaicontinent.butao.head_grade9.name=§e魂头盔******Ⅹ阶
-item.shanhaicontinent.butao.head_grade10.name=§7魂头盔******Ⅺ阶
-item.shanhaicontinent.butao.head_grade11.name=§7魂头盔******Ⅻ阶
-item.shanhaicontinent.butao.head_grade12.name=§6魂头盔******ⅩⅢ阶
-item.shanhaicontinent.butao.head_grade13.name=§6魂头盔******ⅩⅣ阶
-item.shanhaicontinent.butao.head_grade14.name=§5魂头盔******ⅩⅤ阶
-item.shanhaicontinent.butao.head_grade15.name=§4魂头盔******ⅩⅥ阶
-
-item.shanhaicontinent.butao.chest_grade0.name=§a魂胸甲******Ⅰ阶
-item.shanhaicontinent.butao.chest_grade1.name=§a魂胸甲******Ⅱ阶
-item.shanhaicontinent.butao.chest_grade2.name=§b魂胸甲******Ⅲ阶
-item.shanhaicontinent.butao.chest_grade3.name=§b魂胸甲******Ⅳ阶
-item.shanhaicontinent.butao.chest_grade4.name=§c魂胸甲******Ⅴ阶
-item.shanhaicontinent.butao.chest_grade5.name=§c魂胸甲******Ⅵ阶
-item.shanhaicontinent.butao.chest_grade6.name=§d魂胸甲******Ⅶ阶
-item.shanhaicontinent.butao.chest_grade7.name=§d魂胸甲******Ⅷ阶
-item.shanhaicontinent.butao.chest_grade8.name=§e魂胸甲******Ⅸ阶
-item.shanhaicontinent.butao.chest_grade9.name=§e魂胸甲******Ⅹ阶
-item.shanhaicontinent.butao.chest_grade10.name=§7魂胸甲******Ⅺ阶
-item.shanhaicontinent.butao.chest_grade11.name=§7魂胸甲******Ⅻ阶
-item.shanhaicontinent.butao.chest_grade12.name=§6魂胸甲******ⅩⅢ阶
-item.shanhaicontinent.butao.chest_grade13.name=§6魂胸甲******ⅩⅣ阶
-item.shanhaicontinent.butao.chest_grade14.name=§5魂胸甲******ⅩⅤ阶
-item.shanhaicontinent.butao.chest_grade15.name=§4魂胸甲******ⅩⅥ阶
-
-item.shanhaicontinent.butao.legs_grade0.name=§a魂护腿******Ⅰ阶
-item.shanhaicontinent.butao.legs_grade1.name=§a魂护腿******Ⅱ阶
-item.shanhaicontinent.butao.legs_grade2.name=§b魂护腿******Ⅲ阶
-item.shanhaicontinent.butao.legs_grade3.name=§b魂护腿******Ⅳ阶
-item.shanhaicontinent.butao.legs_grade4.name=§c魂护腿******Ⅴ阶
-item.shanhaicontinent.butao.legs_grade5.name=§c魂护腿******Ⅵ阶
-item.shanhaicontinent.butao.legs_grade6.name=§d魂护腿******Ⅶ阶
-item.shanhaicontinent.butao.legs_grade7.name=§d魂护腿******Ⅷ阶
-item.shanhaicontinent.butao.legs_grade8.name=§e魂护腿******Ⅸ阶
-item.shanhaicontinent.butao.legs_grade9.name=§e魂护腿******Ⅹ阶
-item.shanhaicontinent.butao.legs_grade10.name=§7魂护腿******Ⅺ阶
-item.shanhaicontinent.butao.legs_grade11.name=§7魂护腿******Ⅻ阶
-item.shanhaicontinent.butao.legs_grade12.name=§6魂护腿******ⅩⅢ阶
-item.shanhaicontinent.butao.legs_grade13.name=§6魂护腿******ⅩⅣ阶
-item.shanhaicontinent.butao.legs_grade14.name=§5魂护腿******ⅩⅤ阶
-item.shanhaicontinent.butao.legs_grade15.name=§4魂护腿******ⅩⅥ阶
-
-item.shanhaicontinent.butao.feet_grade0.name=§a魂鞋子******Ⅰ阶
-item.shanhaicontinent.butao.feet_grade1.name=§a魂鞋子******Ⅱ阶
-item.shanhaicontinent.butao.feet_grade2.name=§b魂鞋子******Ⅲ阶
-item.shanhaicontinent.butao.feet_grade3.name=§b魂鞋子******Ⅳ阶
-item.shanhaicontinent.butao.feet_grade4.name=§c魂鞋子******Ⅴ阶
-item.shanhaicontinent.butao.feet_grade5.name=§c魂鞋子******Ⅵ阶
-item.shanhaicontinent.butao.feet_grade6.name=§d魂鞋子******Ⅶ阶
-item.shanhaicontinent.butao.feet_grade7.name=§d魂鞋子******Ⅷ阶
-item.shanhaicontinent.butao.feet_grade8.name=§e魂鞋子******Ⅸ阶
-item.shanhaicontinent.butao.feet_grade9.name=§e魂鞋子******Ⅹ阶
-item.shanhaicontinent.butao.feet_grade10.name=§7魂鞋子******Ⅺ阶
-item.shanhaicontinent.butao.feet_grade11.name=§7魂鞋子******Ⅻ阶
-item.shanhaicontinent.butao.feet_grade12.name=§6魂鞋子******ⅩⅢ阶
-item.shanhaicontinent.butao.feet_grade13.name=§6魂鞋子******ⅩⅣ阶
-item.shanhaicontinent.butao.feet_grade14.name=§5魂鞋子******ⅩⅤ阶
-item.shanhaicontinent.butao.feet_grade15.name=§4魂鞋子******ⅩⅥ阶
+item.shanhaicontinent.butao.feet_grade0.name=§aSoul shoes******Ⅰ阶
+item.shanhaicontinent.butao.feet_grade1.name=§aSoul shoes******Ⅱ阶
+item.shanhaicontinent.butao.feet_grade2.name=§bSoul shoes******Ⅲ阶
+item.shanhaicontinent.butao.feet_grade3.name=§bSoul shoes******Ⅳ阶
+item.shanhaicontinent.butao.feet_grade4.name=§cSoul shoes******Ⅴ阶
+item.shanhaicontinent.butao.feet_grade5.name=§cSoul shoes******Ⅵ阶
+item.shanhaicontinent.butao.feet_grade6.name=§dSoul shoes******Ⅶ阶
+item.shanhaicontinent.butao.feet_grade7.name=§dSoul shoes******Ⅷ阶
+item.shanhaicontinent.butao.feet_grade8.name=§eSoul shoes******Ⅸ阶
+item.shanhaicontinent.butao.feet_grade9.name=§eSoul shoes******Ⅹ阶
+item.shanhaicontinent.butao.feet_grade10.name=§7Soul shoes******Ⅺ阶
+item.shanhaicontinent.butao.feet_grade11.name=§7Soul shoes******Ⅻ阶
+item.shanhaicontinent.butao.feet_grade12.name=§6Soul shoes******ⅩⅢ阶
+item.shanhaicontinent.butao.feet_grade13.name=§6Soul shoes******ⅩⅣ阶
+item.shanhaicontinent.butao.feet_grade14.name=§5Soul shoes******ⅩⅤ阶
+item.shanhaicontinent.butao.feet_grade15.name=§4Soul shoes******ⅩⅥ阶
 
 
 
 
+item.shanhaicontinent.soulbonemeal_age0.name=§aSoul bone powder******Ⅰ阶
+item.shanhaicontinent.soulbonemeal_age1.name=§bSoul bone powder******Ⅱ阶
+item.shanhaicontinent.soulbonemeal_age2.name=§cSoul bone powder******Ⅲ阶
+item.shanhaicontinent.soulbonemeal_age3.name=§dSoul bone powder******Ⅳ阶
+item.shanhaicontinent.soulbonemeal_age4.name=§eSoul bone powder******Ⅴ阶
+item.shanhaicontinent.soulbonemeal_age5.name=§7Soul bone powder******Ⅵ阶
+item.shanhaicontinent.soulbonemeal_age6.name=§6Soul bone powder******Ⅶ阶
+item.shanhaicontinent.soulbonemeal_age7.name=§5Soul bone powder******Ⅷ阶
+item.shanhaicontinent.soulbonemeal_age8.name=§4Soul bone powder******Ⅸ阶
 
+soulbonemeal_list0=§aRight click on Soul Earth to spawn a large area of §b Soul Grass
 
+tile.shanhaicontinent.soulsoil_age0.name=§aSoul soil******Ⅰ阶
+tile.shanhaicontinent.soulsoil_age1.name=§bSoul soil******Ⅱ阶
+tile.shanhaicontinent.soulsoil_age2.name=§cSoul soil******Ⅲ阶
+tile.shanhaicontinent.soulsoil_age3.name=§dSoul soil******Ⅳ阶
+tile.shanhaicontinent.soulsoil_age4.name=§eSoul soil******Ⅴ阶
+tile.shanhaicontinent.soulsoil_age5.name=§7Soul soil******Ⅵ阶
+tile.shanhaicontinent.soulsoil_age6.name=§6Soul soil******Ⅶ阶
+tile.shanhaicontinent.soulsoil_age7.name=§5Soul soil******Ⅷ阶
+tile.shanhaicontinent.soulsoil_age8.name=§4Soul soil******Ⅸ阶
 
+soulsoil_list0=§aUsed for planting soul grass, it equivalently determines the growth rate and upper limit of soul grass §a
 
-
-
-
-
-
-
-item.shanhaicontinent.soulbonemeal_age0.name=§a魂骨粉******Ⅰ阶
-item.shanhaicontinent.soulbonemeal_age1.name=§b魂骨粉******Ⅱ阶
-item.shanhaicontinent.soulbonemeal_age2.name=§c魂骨粉******Ⅲ阶
-item.shanhaicontinent.soulbonemeal_age3.name=§d魂骨粉******Ⅳ阶
-item.shanhaicontinent.soulbonemeal_age4.name=§e魂骨粉******Ⅴ阶
-item.shanhaicontinent.soulbonemeal_age5.name=§7魂骨粉******Ⅵ阶
-item.shanhaicontinent.soulbonemeal_age6.name=§6魂骨粉******Ⅶ阶
-item.shanhaicontinent.soulbonemeal_age7.name=§5魂骨粉******Ⅷ阶
-item.shanhaicontinent.soulbonemeal_age8.name=§4魂骨粉******Ⅸ阶
-
-soulbonemeal_list0=§a右键魂土，催生一大片§b魂草
-
-
-tile.shanhaicontinent.soulsoil_age0.name=§a魂土******Ⅰ阶
-tile.shanhaicontinent.soulsoil_age1.name=§b魂土******Ⅱ阶
-tile.shanhaicontinent.soulsoil_age2.name=§c魂土******Ⅲ阶
-tile.shanhaicontinent.soulsoil_age3.name=§d魂土******Ⅳ阶
-tile.shanhaicontinent.soulsoil_age4.name=§e魂土******Ⅴ阶
-tile.shanhaicontinent.soulsoil_age5.name=§7魂土******Ⅵ阶
-tile.shanhaicontinent.soulsoil_age6.name=§6魂土******Ⅶ阶
-tile.shanhaicontinent.soulsoil_age7.name=§5魂土******Ⅷ阶
-tile.shanhaicontinent.soulsoil_age8.name=§4魂土******Ⅸ阶
-
-soulsoil_list0=§a用于种植魂草，等价决定了§b魂草§a的生长速度和上限
-
-item.shanhaicontinent.hunye_age0.name=§a精华*初级
-item.shanhaicontinent.hunye_age1.name=§b精华*中级
-item.shanhaicontinent.hunye_age2.name=§c精华*高级
-item.shanhaicontinent.hunye_age3.name=§d精华*顶级
-item.shanhaicontinent.hunye_age4.name=§e精华*神级
-item.shanhaicontinent.hunye_age5.name=§7精华*仙级
+item.shanhaicontinent.hunye_age0.name=§aEssence * Primary
+item.shanhaicontinent.hunye_age1.name=§bEssence * Intermediate
+item.shanhaicontinent.hunye_age2.name=§cEssence * Advanced
+item.shanhaicontinent.hunye_age3.name=§dEssence * Top
+item.shanhaicontinent.hunye_age4.name=§eEssence * God level
+item.shanhaicontinent.hunye_age5.name=§7Essence * Immortal
 hunye_list0=§b魂草§a在§b造化炉§a中提炼获得
 
 
-item.shanhaicontinent.danfang_age0.name=§a丹方：§f《§a气魂丹§f》*Ⅰ阶
-item.shanhaicontinent.danfang_age1.name=§b丹方：§f《§b聚灵丹§f》*Ⅱ阶
-item.shanhaicontinent.danfang_age2.name=§c丹方：§f《§c玄元丹§f》*Ⅲ阶
-item.shanhaicontinent.danfang_age3.name=§d丹方：§f《§d养魂丹§f》*Ⅳ阶
-item.shanhaicontinent.danfang_age4.name=§e丹方：§f《§e凝碧丹§f》*Ⅴ阶
-item.shanhaicontinent.danfang_age5.name=§7丹方：§f《§7昊元丹§f》*Ⅵ阶
-item.shanhaicontinent.danfang_age6.name=§6丹方：§f《§6涤魂丹§f》*Ⅶ阶
-item.shanhaicontinent.danfang_age7.name=§5丹方：§f《§5皇极丹§f》*Ⅷ阶
-item.shanhaicontinent.danfang_age8.name=§4丹方：§f《§4怒神丹§f》*Ⅸ阶
+item.shanhaicontinent.danfang_age0.name=§aDan Fang: §f "§a Qi Soul Dan §f" * Level I
+item.shanhaicontinent.danfang_age1.name=§bDan Fang: §f "§b Gathering Pill §f" * Level II
+item.shanhaicontinent.danfang_age2.name=§cDan Fang: §f "§c Xuanyuan Dan §f" * Level III
+item.shanhaicontinent.danfang_age3.name=§dDan Fang: §f "§d Soul Nourishing Pill §f" * Level IV
+item.shanhaicontinent.danfang_age4.name=§eDan Fang: §f "§e Ningbi Dan §f" * Level V
+item.shanhaicontinent.danfang_age5.name=§7Dan Fang: §f "§7 Haoyuan Dan §f" * Level VI
+item.shanhaicontinent.danfang_age6.name=§6Dan Fang: §f "§6 Soul Cleansing Pill §f" * Level VII
+item.shanhaicontinent.danfang_age7.name=§5Dan Fang: Section VIII of "§5 Huangji Dan"
+item.shanhaicontinent.danfang_age8.name=§4Dan Fang: §f "§4 Angry God Dan §f" * Level IX
 
-item.shanhaicontinent.danfangjiuhua.name=§4丹方：§1《§b九花玉露丸§1》***
+item.shanhaicontinent.danfangjiuhua.name=§4Dan Fang: §1 "§b Jiuhua Yulu Wan §1"***
 
-
-item.shanhaicontinent.danyao_age0.name=§a气魂丹*Ⅰ阶
-item.shanhaicontinent.danyao_age1.name=§b聚灵丹*Ⅱ阶
-item.shanhaicontinent.danyao_age2.name=§c玄元丹*Ⅲ阶
-item.shanhaicontinent.danyao_age3.name=§d养魂丹*Ⅳ阶
-item.shanhaicontinent.danyao_age4.name=§e凝碧丹*Ⅴ阶
-item.shanhaicontinent.danyao_age5.name=§7昊元丹*Ⅵ阶
-item.shanhaicontinent.danyao_age6.name=§6涤魂丹*Ⅶ阶
-item.shanhaicontinent.danyao_age7.name=§5皇极丹*Ⅷ阶
-item.shanhaicontinent.danyao_age8.name=§4怒神丹*Ⅸ阶
-danyao_list0=§a由§e造化炉§b炼制获得，材料：§1单方、§2煤炭、§3魂草
-item.shanhaicontinent.danyaojiuhua.name=§1《§b九花玉露丸§1》
-
-danfang.qihundan=§0《§a气魂丹§0》
-danfang.qihundan.introduce=介绍：提升修为的丹药
-danfang.qihundan.effect=功效：增加一定经验
-danfang.qihundan.material=材料：§02*§f月光花*Ⅹ年  §02*§f百岁兰*Ⅹ年
+item.shanhaicontinent.danyao_age0.name=§aQi Soul Pill * Level I
+item.shanhaicontinent.danyao_age1.name=§bGathering Spirit Pill * Level II
+item.shanhaicontinent.danyao_age2.name=§cXuanyuan Dan * Level III
+item.shanhaicontinent.danyao_age3.name=§dSoul Nourishing Pill * Level IV
+item.shanhaicontinent.danyao_age4.name=§eNingbi Dan * Level V
+item.shanhaicontinent.danyao_age5.name=§7Haoyuan Dan * Level VI
+item.shanhaicontinent.danyao_age6.name=§6Dishun Pill * Level VII
+item.shanhaicontinent.danyao_age7.name=§5Huangji Dan * Grade VIII
+item.shanhaicontinent.danyao_age8.name=§4Angry God Pill Level IX
+danyao_list0=§aObtained from §e refining furnace §b, materials: §1 cubic meter, §2 coal, §3 soul grass
+item.shanhaicontinent.danyaojiuhua.name=§1"§b Nine Flower Jade Dew Pill §1"
+item.shanhaicontinent.wanfajieshao.name=§9Gameplay Introduction
 
 
-danfang0.peifang.list0=§0《§a气魂丹§0》制作中：
-danfang0.peifang.list1=§f百岁兰*Ⅹ年§0>>>>>§2木
-danfang0.peifang.list2=§f月光花*Ⅹ年§0>>>>>§9水
-danfang0.peifang.list3=§f百岁兰*Ⅹ年§0>>>>>§c火
-danfang0.peifang.list4=§f月光花*Ⅹ年§0>>>>>§e金
+
+
+danfang.qihundan=§0§A Qi Soul Pill §0
+danfang.qihundan.introduce=Introduction: Pills for improving cultivation
+danfang.qihundan.effect=Effect: Increase certain experience
+danfang.qihundan.material=Material: §02 * §f Moonlight Flower * Year X §02 * §f Centenary Orchid * Year X
+
+
+danfang0.peifang.list0=§0In the production of §A Soul Pill §0:
+danfang0.peifang.list1=§f100 year old Lan * X year §0>>>>§2 wood
+danfang0.peifang.list2=§fMoonlight Flower * X Years §0>>>§9 Water
+danfang0.peifang.list3=§fCentenary Orchid * Year X §0>>>§C Fire
+danfang0.peifang.list4=§fMoonlight Flower * X Years §0>>>>§e Gold
 danfang0.peifang.list5=§k0000§o0000
 danfang0.peifang.list6=§k0000§o0000
 
 
-danfang.jvlingdan=§0《§b聚灵丹§0》
-danfang.jvlingdan.introduce=介绍：提升修为的丹药
-danfang.jvlingdan.effect=功效：增加一定经验
-danfang.jvlingdan.material=材料：§01*§e朱莎梅*佰年  §02*§f含笑花*Ⅹ年  §02*§f合欢*Ⅹ年
+danfang.jvlingdan=§0§b Gathering Pill §0
+danfang.jvlingdan.introduce=Introduction: Pills for improving cultivation
+danfang.jvlingdan.effect=Effect: Increase certain experience
+danfang.jvlingdan.material=材料：§01 * §e Zhu Sha Mei * hundred years * 02 * §f Han Xiao Hua * twenty years * 02 * §f Huan Huan * twenty years
 
 
-danfang1.peifang.list0=§0《§b聚灵丹§0》制作中：
-danfang1.peifang.list1=§e朱莎梅*佰年§0>>>>>§2木
-danfang1.peifang.list2=§f含笑花*Ⅹ年§0>>>>>§9水
-danfang1.peifang.list3=§f合欢*Ⅹ年§0>>>>>§c火
-danfang1.peifang.list4=§f含笑花*Ⅹ年§0>>>>>§e金
-danfang1.peifang.list5=§f合欢*Ⅹ年§0>>>>>§6土
+danfang1.peifang.list0=§0In the production of "§b Gathering Pill §0":
+danfang1.peifang.list1=§eZhu Shamei * Hundred Years §0>>>§2 Wood
+danfang1.peifang.list2=§fSmiling Flower * X Years §0>>>>§9 Water
+danfang1.peifang.list3=§fHehuan * Year X §0>>>§C Fire
+danfang1.peifang.list4=§fSmiling Flower * X Years §0>>>>§e Gold
+danfang1.peifang.list5=§fHehuan * Year X §0>>>>§6 Soil
 danfang1.peifang.list6=§k0000§o0000
 
 
 
-danfang.xvanyuandan=§0《§c玄元丹§0》
-danfang.xvanyuandan.introduce=介绍：提升修为的丹药
-danfang.xvanyuandan.effect=功效：增加一定经验
-danfang.xvanyuandan.material=材料：§01*§e月光花*佰年  §01*§e薰衣草*佰年  §02*§f何首乌*Ⅹ年  §02*§f秋海棠*Ⅹ年
+danfang.xvanyuandan=§0§C Xuanyuan Dan §0
+danfang.xvanyuandan.introduce=Introduction: Pills for improving cultivation
+danfang.xvanyuandan.effect=Effect: Increase certain experience
+danfang.xvanyuandan.material=Materials: §01 * §e Moonlight Flower * Centenary §01 * §e Lavender * Centenary §02 * §f Polygonum multiflorum * XX year §02 * §f Autumn Begonia * XX year
 
 
-danfang2.peifang.list0=§0《§c玄元丹§0》制作中：
-danfang2.peifang.list1.0=§e月光花*佰年§0>>>>>§2木
-danfang2.peifang.list1.1=§e薰衣草*佰年§0>>>>>§c火
-danfang2.peifang.list2=§f何首乌*Ⅹ年§0>>>>>§9水
-danfang2.peifang.list3=§f秋海棠*Ⅹ年§0>>>>>§c火
-danfang2.peifang.list4=§f何首乌*Ⅹ年§0>>>>>§e金
-danfang2.peifang.list5=§f秋海棠*Ⅹ年§0>>>>>§6土
+danfang2.peifang.list0=§0In the production of §C Xuanyuan Dan §0:
+danfang2.peifang.list1.0=§eMoonlight Flower * Hundred Years §0>>>>§2 Wood
+danfang2.peifang.list1.1=§eLavender * Centenary §0>>>§C Fire
+danfang2.peifang.list2=§fPolygonum multiflorum * Year X Water
+danfang2.peifang.list3=§fAutumn Begonia * Year X §0>>>§C Fire
+danfang2.peifang.list4=§fPolygonum multiflorum * Year X §0>>>§e Gold
+danfang2.peifang.list5=§fAutumn Begonia * X Years §0>>>>§6 Soil
 danfang2.peifang.list6=§k0000§o0000
 
-danfang.yanghundan=§0《§d养魂丹§0》
-danfang.yanghundan.introduce=介绍：提升修为的丹药
-danfang.yanghundan.effect=功效：增加一定经验
-danfang.yanghundan.material=材料：§02*§e夕雾*佰年  §01*§e忘忧草*佰年  §01*§e山茶*佰年  §01*§e秋海棠*佰年
+danfang.yanghundan=§0§D Soul Nourishing Pill §0
+danfang.yanghundan.introduce=Introduction: Pills for improving cultivation
+danfang.yanghundan.effect=Effect: Increase certain experience
+danfang.yanghundan.material=Materials: §02 * §e Xiwu * Centenary §01 * §e Forget Worry Grass * Centenary §01 * §e Mountain Tea * Centenary §01 * §e Autumn Begonia * Centenary
 
 
-danfang3.peifang.list0=§0《§d养魂丹§0》制作中：
-danfang3.peifang.list1=§e夕雾*佰年§0>>>>>§2木
-danfang3.peifang.list2=§e山茶*佰年§0>>>>>§9水
-danfang3.peifang.list3=§e秋海棠*佰年§0>>>>>§c火
-danfang3.peifang.list4=§e忘忧草*佰年§0>>>>>§e金
-danfang3.peifang.list5=§e夕雾*佰年§0>>>>>§6土
+danfang3.peifang.list0=§0In the production of Soul Nourishing Pill:
+danfang3.peifang.list1=§eXiwu * Hundred Years §0>>>>§2 Wood
+danfang3.peifang.list2=§eCamellia * Centennial §0>>>§9 Water
+danfang3.peifang.list3=§eAutumn Begonia * Centenary §0>>>§C Fire
+danfang3.peifang.list4=§eForgetting Worry Grass * Centenary §0>>>§eGold
+danfang3.peifang.list5=§eXiwu * Hundred Years §0>>>>§6 Earth
 danfang3.peifang.list6=§k0000§o0000
 
 
-danfang.lingbidan=§0《§e凝碧丹§0》
-danfang.lingbidan.introduce=介绍：提升修为的丹药
-danfang.lingbidan.effect=功效：增加一定经验
-danfang.lingbidan.material=材料：§01*§d秋海棠*仟年  §01*§d山茶*仟年  §02*§e何首乌*佰年  §02*§e合欢*佰年
+danfang.lingbidan=§0§e Ningbi Dan §0
+danfang.lingbidan.introduce=Introduction: Pills for improving cultivation
+danfang.lingbidan.effect=Effect: Increase certain experience
+danfang.lingbidan.material=Materials: §01 * §d Autumn Begonia * Thousand Year §01 * §d Mountain Tea * Thousand Year §02 * §e Polygonum multiflorum * Hundred Year §02 * §e Hehuan * Hundred Year
 
 
 
-danfang4.peifang.list0=§0《§e凝碧丹§0》制作中：
-danfang4.peifang.list1.0=§d秋海棠*仟年§0>>>>>§2木
-danfang4.peifang.list1.1=§d山茶*仟年§0>>>>>§6土
-danfang4.peifang.list2=§e何首乌*佰年§0>>>>>§9水
-danfang4.peifang.list3=§e合欢*佰年§0>>>>>§c火
-danfang4.peifang.list4=§e何首乌*佰年§0>>>>>§e金
-danfang4.peifang.list5=§e合欢*佰年§0>>>>>§6土
+danfang4.peifang.list0=§0In the production of "§e Ningbi Dan §0":
+danfang4.peifang.list1.0=§dAutumn Begonia * Thousand Years §0>>>>§2 Wood
+danfang4.peifang.list1.1=§dCamellia * Thousand Years §0>>>>§6 Soil
+danfang4.peifang.list2=§ePolygonum multiflorum * Centennial §0>>>>§9 Water
+danfang4.peifang.list3=§eHuanhuan * Centenary §0>>>>§C Fire
+danfang4.peifang.list4=§ePolygonum multiflorum * Centennial §0>>>>§eGold
+danfang4.peifang.list5=§eHuanhuan * Hundred Years §0>>>>§6 Earth
 danfang4.peifang.list6=§k0000§o0000
 
-danfang.haoyuan=§0《§7昊元丹§0》
-danfang.haoyuan.introduce=介绍：提升修为的丹药
-danfang.haoyuan.effect=功效：增加一定经验
-danfang.haoyuan.material=材料：§01*§8含笑花*万年  §01*§d百岁兰*仟年  §02*§d朱莎梅*仟年  §02*§d月光花*仟年
+danfang.haoyuan=§0§7 Haoyuan Dan §0
+danfang.haoyuan.introduce=Introduction: Pills for improving cultivation
+danfang.haoyuan.effect=Effect: Increase certain experience
+danfang.haoyuan.material=Materials: §01 * §8 Smiling Flower * Ten Thousand Years §01 * §d Centenary Orchid * Thousand Years §02 * §d Zhu Shamei * Thousand Years §02 * §d Moonlight Flower * Thousand Years
 
 
 
-danfang5.peifang.list0=§0《§7昊元丹§0》制作中：
-danfang5.peifang.list1.0=§8含笑花*万年§0>>>>>§2木
-danfang5.peifang.list1.1=§d百岁兰*仟年§0>>>>>§6土
-danfang5.peifang.list2=§d朱莎梅*仟年§0>>>>>§9水
-danfang5.peifang.list3=§d月光花*仟年§0>>>>>§c火
-danfang5.peifang.list4=§d朱莎梅*仟年§0>>>>>§e金
-danfang5.peifang.list5=§d月光花*仟年§0>>>>>§6土
+danfang5.peifang.list0=§0In the production of §7 Haoyuan Dan §0:
+danfang5.peifang.list1.0=§8Smiling Flower * Ten Thousand Years §0>>>>§2 Wood
+danfang5.peifang.list1.1=§dCentenary Orchid * Millennium §0>>>>§6 Soil
+danfang5.peifang.list2=§dZhu Shamei * Thousand Years §0>>>§9 Water
+danfang5.peifang.list3=§dMoonlight Flower * Thousand Years §0>>>>§C Fire
+danfang5.peifang.list4=§dZhu Shamei * Millennium §0>>>>§e Gold
+danfang5.peifang.list5=§dMoonlight Flower * Thousand Years §0>>>>§6 Earth
 danfang5.peifang.list6=§k0000§o0000
 
 
 
-danfang.xihundan=§0《§6涤魂丹§0》
-danfang.xihundan.introduce=介绍：提升修为的丹药
-danfang.xihundan.effect=功效：增加一定经验
-danfang.xihundan.material=材料：§01*§8百岁兰*万年  §01*§8风信子*万年  §01*§8含笑花*万年  §02*§8合欢*万年
+danfang.xihundan=§0§6 Soul Refining Pill §0
+danfang.xihundan.introduce=Introduction: Pills for improving cultivation
+danfang.xihundan.effect=Effect: Increase certain experience
+danfang.xihundan.material=Materials: §01 * §8 Centenary Orchid * Ten Thousand Years §01 * §8 Hyacinth * Ten Thousand Years §01 * §8 Smiling Flower * Ten Thousand Years §02 * §8 Acacia * Ten Thousand Years
 
 
 
-danfang6.peifang.list0=§0《§6涤魂丹§0》制作中：
-danfang6.peifang.list1=§8百岁兰*万年§0>>>>>§2木
-danfang6.peifang.list2=§8合欢*万年§0>>>>>§6土
-danfang6.peifang.list3=§8风信子*万年§0>>>>>§c火
-danfang6.peifang.list4=§8含笑花*万年§0>>>>>§e金
-danfang6.peifang.list5=§8合欢*万年§0>>>>>§6土
+danfang6.peifang.list0=§0In the production of §6 Soul Refining Pill §0:
+danfang6.peifang.list1=§8Bai Sui Lan * Wan Nian §0>>>>§2 Mu
+danfang6.peifang.list2=§8Huanhuan * Ten Thousand Years §0>>>>§6 Earth
+danfang6.peifang.list3=§8Hyacinth * Ten Thousand Years §0>>>>§C Fire
+danfang6.peifang.list4=§8Smiling Flower * Ten Thousand Years §0>>>>§eGold
+danfang6.peifang.list5=§8Huanhuan * Ten Thousand Years §0>>>>§6 Earth
 danfang6.peifang.list6=§k0000§o0000
 
 
 
-danfang.huangjidan=§0《§5皇极丹§0》
-danfang.huangjidan.introduce=介绍：提升修为的丹药
-danfang.huangjidan.effect=功效：增加一定经验
-danfang.huangjidan.material=材料：§01§c秋海棠*Ⅹ万年  §01§c山茶*Ⅹ万年  §01§c忘忧草*Ⅹ万年  §01§c夕雾*Ⅹ万年  §01*§8薰衣草*万年
+danfang.huangjidan=§0§5 Huangji Dan §0
+danfang.huangjidan.introduce=Introduction: Pills for improving cultivation
+danfang.huangjidan.effect=Effect: Increase certain experience
+danfang.huangjidan.material=Materials: §01 §c Autumn Begonia * Ten Thousand Years §01 §c Mountain Tea * Ten Thousand Years §01 §c Forget Worry Grass * Ten Thousand Years §01 §c Evening Mist * Ten Thousand Years §01 * §8 Lavender * Ten Thousand Years
 
 
-danfang7.peifang.list0=§0《§5皇极丹§0》制作中：
-danfang7.peifang.list1=§c秋海棠*Ⅹ万年§0>>>>>§2木
-danfang7.peifang.list2=§c山茶*Ⅹ万年§0>>>>>§6土
-danfang7.peifang.list3=§c忘忧草*Ⅹ万年§0>>>>>§c火
-danfang7.peifang.list4=§c夕雾*Ⅹ万年§0>>>>>§e金
-danfang7.peifang.list5=§8薰衣草*万年§0>>>>>§6土
+danfang7.peifang.list0=§0In the production of §5 Huangji Dan §0:
+danfang7.peifang.list1=§cAutumn Begonia * Ten Thousand Years §0>>>>§2 Wood
+danfang7.peifang.list2=§cCamellia * X Ten Thousand Years §0>>>>§6 Soil
+danfang7.peifang.list3=§cForget Worry Grass * Ten Thousand Years §0>>>§C Fire
+danfang7.peifang.list4=§cXiwu * X Ten Thousand Years §0>>>>§e Gold
+danfang7.peifang.list5=§8Lavender * Ten Thousand Years §0>>>>§6 Soil
 danfang7.peifang.list6=§k0000§o0000
 
 
 
-danfang.lushendan=§0《§4怒神丹§0》
-danfang.lushendan.introduce=介绍：提升修为的丹药
-danfang.lushendan.effect=功效：增加一定经验
-danfang.lushendan.material=材料：§01*§4任意佰万年魂药  §01§c月光花*Ⅹ万年  §01§c朱莎梅*Ⅹ万年  §01§c合欢*Ⅹ万年  §01§c山茶*Ⅹ万年
+danfang.lushendan=§0§4 Angry God Pill §0
+danfang.lushendan.introduce=Introduction: Pills for improving cultivation
+danfang.lushendan.effect=Effect: Increase certain experience
+danfang.lushendan.material=Materials: §01 * §4 Any Million Year Soul Medicine §01 §c Moonlight Flower * Ten Thousand Year §01 §c Zhu Sha Mei * Ten Thousand Year §01 §c Acacia * Ten Thousand Year §01 §c Camellia * Ten Thousand Year
 
 
-danfang8.peifang.list0=§0《§4怒神丹§0》制作中：
-danfang8.peifang.list1=§4任意佰万年魂药§0>>>>>§k木
-danfang8.peifang.list2=§c月光花*Ⅹ万年§0>>>>>§6土
-danfang8.peifang.list3=§c朱莎梅*Ⅹ万年§0>>>>>§c火
-danfang8.peifang.list4=§c合欢*Ⅹ万年§0>>>>>§e金
-danfang8.peifang.list5=§c山茶*Ⅹ万年§0>>>>>§6土
+danfang8.peifang.list0=§0In the production of §4 Angry God Pill §0:
+danfang8.peifang.list1=§4Any Million Year Soul Medicine §0>>>>§k Wood
+danfang8.peifang.list2=§cMoonlight Flower * X Ten Thousand Years §0>>>>§6 Earth
+danfang8.peifang.list3=§cZhu Shamei * X Ten Thousand Years §0>>>§C Fire
+danfang8.peifang.list4=§cHehuan * X Ten Thousand Years §0>>>§e Gold
+danfang8.peifang.list5=§cCamellia * X Ten Thousand Years §0>>>>§6 Soil
 danfang8.peifang.list6=§k0000§o0000
 
 
 
-danfang.jiuhua=§1《§b九花玉露丸§1》***
-danfang.jiuhua.introduce=介绍：九花玉露丸是一种非常珍贵的药草，它是由九种名贵草药炼制而成，对精神修复有着起效
-danfang.jiuhua.effect=功效：增加5点最大精神力
-danfang.jiuhua.material=材料：§01*§e百年以上的合欢  §01*§e百年以上的秋海棠  §01*§e百年以上的山茶  §01*§e百年以上的夕雾  §01*§e百年以上的月光花
+danfang.jiuhua=§1"§b Nine Flower Jade Dew Pill §1"***
+danfang.jiuhua.introduce=Introduction: Jiuhua Yulu Pill is a very precious herb, which is refined from nine precious herbs and has an effect on spiritual restoration
+danfang.jiuhua.effect=Effect: Increases maximum mental power by 5 points
+danfang.jiuhua.material=Materials: §01 * §e Acacia over a hundred years §01 * §e Begonia over a hundred years §01 * §e Camellia over a hundred years §01 * §e Mist over a hundred years §01 * §e Moonlight flowers over a hundred years
 
 
-danfangjiuhua.peifang.list0=§1《§b九花玉露丸§1》制作中：
-danfangjiuhua.peifang.list1=§4百年以上的合欢§0>>>>>§k木
-danfangjiuhua.peifang.list2=§c百年以上的秋海棠§0>>>>>§9水
-danfangjiuhua.peifang.list3=§c百年以上的山茶§0>>>>>§c火
-danfangjiuhua.peifang.list4=§c百年以上的夕雾§0>>>>>§e金
-danfangjiuhua.peifang.list5=§c百年以上的月光花§0>>>>>§6土
+danfangjiuhua.peifang.list0=§1In the production of "§b Jiuhua Yulu Pill §1":
+danfangjiuhua.peifang.list1=§4Acacia trees over a century old
+danfangjiuhua.peifang.list2=§cAutumn crabapple over a hundred years old
+danfangjiuhua.peifang.list3=§cCamellia that has been around for over a hundred years
+danfangjiuhua.peifang.list4=§cOver a hundred years of evening mist §0>>>>§e gold
+danfangjiuhua.peifang.list5=§cMoonlight flowers over a hundred years old §0>>>>§6 Soil
 danfangjiuhua.peifang.list6=§k0000§o0000
 
-flowerblock_list0=§a可在§b魂土§a上培养
-tile.shanhaicontinent.bianhua_age0.name=§2彼岸花种子
-tile.shanhaicontinent.bianhua_age1.name=§f彼岸花******Ⅹ年
-tile.shanhaicontinent.bianhua_age2.name=§e彼岸花******佰年
-tile.shanhaicontinent.bianhua_age3.name=§d彼岸花******仟年
-tile.shanhaicontinent.bianhua_age4.name=§8彼岸花******万年
-tile.shanhaicontinent.bianhua_age5.name=§c彼岸花******Ⅹ万年
-tile.shanhaicontinent.bianhua_age6.name=§4彼岸花******佰万年
+flowerblock_list0=§aCan be cultivated on §b Soul Soil §a
+tile.shanhaicontinent.bianhua_age0.name=§2Other shore flower seeds
+tile.shanhaicontinent.bianhua_age1.name=§fBian An Hua ******* X years
+tile.shanhaicontinent.bianhua_age2.name=§eThe other shore flower has a hundred years of history
+tile.shanhaicontinent.bianhua_age3.name=§dThe flower on the other side has been blooming for thousands of years
+tile.shanhaicontinent.bianhua_age4.name=§8The flower on the other side will last for thousands of years
+tile.shanhaicontinent.bianhua_age5.name=§cThe other shore flower has been around for ****************** for tens of thousands of years
+tile.shanhaicontinent.bianhua_age6.name=§4Bian An Hua ****** million years
 
 
-tile.shanhaicontinent.baisuilan_age0.name=§2百岁兰种子
-tile.shanhaicontinent.baisuilan_age1.name=§f百岁兰******Ⅹ年
-tile.shanhaicontinent.baisuilan_age2.name=§e百岁兰******佰年
-tile.shanhaicontinent.baisuilan_age3.name=§d百岁兰******仟年
-tile.shanhaicontinent.baisuilan_age4.name=§8百岁兰******万年
-tile.shanhaicontinent.baisuilan_age5.name=§c百岁兰******Ⅹ万年
-tile.shanhaicontinent.baisuilan_age6.name=§4百岁兰******佰万年
+tile.shanhaicontinent.baisuilan_age0.name=§2Centennial Orchid Seed
+tile.shanhaicontinent.baisuilan_age1.name=§fCentenary Orchid******Ⅹyear
+tile.shanhaicontinent.baisuilan_age2.name=§eCentenary Orchid******佰year
+tile.shanhaicontinent.baisuilan_age3.name=§dCentenary Orchid******仟year
+tile.shanhaicontinent.baisuilan_age4.name=§8Centenary Orchid******万year
+tile.shanhaicontinent.baisuilan_age5.name=§cCentenary Orchid******Ⅹ万year
+tile.shanhaicontinent.baisuilan_age6.name=§4Centenary Orchid******佰万year
 
-tile.shanhaicontinent.fengxinzi_age0.name=§2风信子种子
-tile.shanhaicontinent.fengxinzi_age1.name=§f风信子******Ⅹ年
-tile.shanhaicontinent.fengxinzi_age2.name=§e风信子******佰年
-tile.shanhaicontinent.fengxinzi_age3.name=§d风信子******仟年
-tile.shanhaicontinent.fengxinzi_age4.name=§8风信子******万年
-tile.shanhaicontinent.fengxinzi_age5.name=§c风信子******Ⅹ万年
-tile.shanhaicontinent.fengxinzi_age6.name=§4风信子******佰万年
+tile.shanhaicontinent.fengxinzi_age0.name=§2Hyacinth seed
+tile.shanhaicontinent.fengxinzi_age1.name=§fHyacinth seed******Ⅹyear
+tile.shanhaicontinent.fengxinzi_age2.name=§eHyacinth seed******佰year
+tile.shanhaicontinent.fengxinzi_age3.name=§dHyacinth seed******仟year
+tile.shanhaicontinent.fengxinzi_age4.name=§8Hyacinth seed******万year
+tile.shanhaicontinent.fengxinzi_age5.name=§cHyacinth seed******Ⅹ万year
+tile.shanhaicontinent.fengxinzi_age6.name=§4Hyacinth seed******佰万year
 
-tile.shanhaicontinent.hanxiaohua_age0.name=§2含笑花种子
-tile.shanhaicontinent.hanxiaohua_age1.name=§f含笑花******Ⅹ年
-tile.shanhaicontinent.hanxiaohua_age2.name=§e含笑花******佰年
-tile.shanhaicontinent.hanxiaohua_age3.name=§d含笑花******仟年
-tile.shanhaicontinent.hanxiaohua_age4.name=§8含笑花******万年
-tile.shanhaicontinent.hanxiaohua_age5.name=§c含笑花******Ⅹ万年
-tile.shanhaicontinent.hanxiaohua_age6.name=§4含笑花******佰万年
+tile.shanhaicontinent.hanxiaohua_age0.name=§2Michelia seed
+tile.shanhaicontinent.hanxiaohua_age1.name=§fMichelia******Ⅹyear
+tile.shanhaicontinent.hanxiaohua_age2.name=§eMichelia******佰year
+tile.shanhaicontinent.hanxiaohua_age3.name=§dMichelia******仟year
+tile.shanhaicontinent.hanxiaohua_age4.name=§8Michelia******万year
+tile.shanhaicontinent.hanxiaohua_age5.name=§cMichelia******Ⅹ万year
+tile.shanhaicontinent.hanxiaohua_age6.name=§4Michelia******佰万year
 
-tile.shanhaicontinent.hehuan_age0.name=§2合欢种子
-tile.shanhaicontinent.hehuan_age1.name=§f合欢******Ⅹ年
-tile.shanhaicontinent.hehuan_age2.name=§e合欢******佰年
-tile.shanhaicontinent.hehuan_age3.name=§d合欢******仟年
-tile.shanhaicontinent.hehuan_age4.name=§8合欢******万年
-tile.shanhaicontinent.hehuan_age5.name=§c合欢******Ⅹ万年
-tile.shanhaicontinent.hehuan_age6.name=§4合欢******佰万年
+tile.shanhaicontinent.hehuan_age0.name=§2Acacia seed
+tile.shanhaicontinent.hehuan_age1.name=§fAcacia******Ⅹyear
+tile.shanhaicontinent.hehuan_age2.name=§eAcacia******佰year
+tile.shanhaicontinent.hehuan_age3.name=§dAcacia******仟year
+tile.shanhaicontinent.hehuan_age4.name=§8Acacia******万year
+tile.shanhaicontinent.hehuan_age5.name=§cAcacia******Ⅹ万year
+tile.shanhaicontinent.hehuan_age6.name=§4Acacia******佰万year
 
-tile.shanhaicontinent.heshouwu_age0.name=§2何首乌种子
-tile.shanhaicontinent.heshouwu_age1.name=§f何首乌******Ⅹ年
-tile.shanhaicontinent.heshouwu_age2.name=§e何首乌******佰年
-tile.shanhaicontinent.heshouwu_age3.name=§d何首乌******仟年
-tile.shanhaicontinent.heshouwu_age4.name=§8何首乌******万年
-tile.shanhaicontinent.heshouwu_age5.name=§c何首乌******Ⅹ万年
-tile.shanhaicontinent.heshouwu_age6.name=§4何首乌******佰万年
+tile.shanhaicontinent.heshouwu_age0.name=§2Polygonum multiflorum seeds
+tile.shanhaicontinent.heshouwu_age1.name=§fPolygonum multiflorum******Ⅹyear
+tile.shanhaicontinent.heshouwu_age2.name=§ePolygonum multiflorum******佰year
+tile.shanhaicontinent.heshouwu_age3.name=§dPolygonum multiflorum******仟year
+tile.shanhaicontinent.heshouwu_age4.name=§8Polygonum multiflorum******万year
+tile.shanhaicontinent.heshouwu_age5.name=§cPolygonum multiflorum******Ⅹ万year
+tile.shanhaicontinent.heshouwu_age6.name=§4Polygonum multiflorum******佰万year
 
-tile.shanhaicontinent.qiuhaitang_age0.name=§2秋海棠种子
-tile.shanhaicontinent.qiuhaitang_age1.name=§f秋海棠******Ⅹ年
-tile.shanhaicontinent.qiuhaitang_age2.name=§e秋海棠******佰年
-tile.shanhaicontinent.qiuhaitang_age3.name=§d秋海棠******仟年
-tile.shanhaicontinent.qiuhaitang_age4.name=§8秋海棠******万年
-tile.shanhaicontinent.qiuhaitang_age5.name=§c秋海棠******Ⅹ万年
-tile.shanhaicontinent.qiuhaitang_age6.name=§4秋海棠******佰万年
+tile.shanhaicontinent.qiuhaitang_age0.name=§2Autumn Begonia Seed
+tile.shanhaicontinent.qiuhaitang_age1.name=§fAutumn Begonia******Ⅹyear
+tile.shanhaicontinent.qiuhaitang_age2.name=§eAutumn Begonia******佰year
+tile.shanhaicontinent.qiuhaitang_age3.name=§dAutumn Begonia******仟year
+tile.shanhaicontinent.qiuhaitang_age4.name=§8Autumn Begonia******万year
+tile.shanhaicontinent.qiuhaitang_age5.name=§cAutumn Begonia******Ⅹ万year
+tile.shanhaicontinent.qiuhaitang_age6.name=§4Autumn Begonia******佰万year
 
-tile.shanhaicontinent.shancha_age0.name=§2山茶种子
-tile.shanhaicontinent.shancha_age1.name=§f山茶******Ⅹ年
-tile.shanhaicontinent.shancha_age2.name=§e山茶******佰年
-tile.shanhaicontinent.shancha_age3.name=§d山茶******仟年
-tile.shanhaicontinent.shancha_age4.name=§8山茶******万年
-tile.shanhaicontinent.shancha_age5.name=§c山茶******Ⅹ万年
-tile.shanhaicontinent.shancha_age6.name=§4山茶******佰万年
+tile.shanhaicontinent.shancha_age0.name=§2Camellia seed
+tile.shanhaicontinent.shancha_age1.name=§fCamellia******Ⅹyear
+tile.shanhaicontinent.shancha_age2.name=§eCamellia******佰year
+tile.shanhaicontinent.shancha_age3.name=§dCamellia******仟year
+tile.shanhaicontinent.shancha_age4.name=§8Camellia******万year
+tile.shanhaicontinent.shancha_age5.name=§cCamellia******Ⅹ万year
+tile.shanhaicontinent.shancha_age6.name=§4Camellia******佰万year
 
-tile.shanhaicontinent.wangyoucao_age0.name=§2忘忧草种子
-tile.shanhaicontinent.wangyoucao_age1.name=§f忘忧草******Ⅹ年
-tile.shanhaicontinent.wangyoucao_age2.name=§e忘忧草******佰年
-tile.shanhaicontinent.wangyoucao_age3.name=§d忘忧草******仟年
-tile.shanhaicontinent.wangyoucao_age4.name=§8忘忧草******万年
-tile.shanhaicontinent.wangyoucao_age5.name=§c忘忧草******Ⅹ万年
-tile.shanhaicontinent.wangyoucao_age6.name=§4忘忧草******佰万年
+tile.shanhaicontinent.wangyoucao_age0.name=§2Forgetful Grass Seed
+tile.shanhaicontinent.wangyoucao_age1.name=§fForgetful Grass******Ⅹyear
+tile.shanhaicontinent.wangyoucao_age2.name=§eForgetful Grass******佰year
+tile.shanhaicontinent.wangyoucao_age3.name=§dForgetful Grass******仟year
+tile.shanhaicontinent.wangyoucao_age4.name=§8Forgetful Grass******万year
+tile.shanhaicontinent.wangyoucao_age5.name=§cForgetful Grass******Ⅹ万year
+tile.shanhaicontinent.wangyoucao_age6.name=§4Forgetful Grass******佰万year
 
-tile.shanhaicontinent.xiwu_age0.name=§2夕雾种子
-tile.shanhaicontinent.xiwu_age1.name=§f夕雾******Ⅹ年
-tile.shanhaicontinent.xiwu_age2.name=§e夕雾******佰年
-tile.shanhaicontinent.xiwu_age3.name=§d夕雾******仟年
-tile.shanhaicontinent.xiwu_age4.name=§8夕雾******万年
-tile.shanhaicontinent.xiwu_age5.name=§c夕雾******Ⅹ万年
-tile.shanhaicontinent.xiwu_age6.name=§4夕雾******佰万年
+tile.shanhaicontinent.xiwu_age0.name=§2Xiwu Seed
+tile.shanhaicontinent.xiwu_age1.name=§fXiwu******Ⅹyear
+tile.shanhaicontinent.xiwu_age2.name=§eXiwu******佰year
+tile.shanhaicontinent.xiwu_age3.name=§dXiwu******仟year
+tile.shanhaicontinent.xiwu_age4.name=§8Xiwu******万year
+tile.shanhaicontinent.xiwu_age5.name=§cXiwu******Ⅹ万year
+tile.shanhaicontinent.xiwu_age6.name=§4Xiwu******佰万year
 
-tile.shanhaicontinent.xunyicao_age0.name=§2薰衣草种子
-tile.shanhaicontinent.xunyicao_age1.name=§f薰衣草******Ⅹ年
-tile.shanhaicontinent.xunyicao_age2.name=§e薰衣草******佰年
-tile.shanhaicontinent.xunyicao_age3.name=§d薰衣草******仟年
-tile.shanhaicontinent.xunyicao_age4.name=§8薰衣草******万年
-tile.shanhaicontinent.xunyicao_age5.name=§c薰衣草******Ⅹ万年
-tile.shanhaicontinent.xunyicao_age6.name=§4薰衣草******佰万年
+tile.shanhaicontinent.xunyicao_age0.name=§2Lavender Seed
+tile.shanhaicontinent.xunyicao_age1.name=§fLavender******Ⅹyear
+tile.shanhaicontinent.xunyicao_age2.name=§eLavender******佰year
+tile.shanhaicontinent.xunyicao_age3.name=§dLavender******仟year
+tile.shanhaicontinent.xunyicao_age4.name=§8Lavender******万year
+tile.shanhaicontinent.xunyicao_age5.name=§cLavender******Ⅹ万year
+tile.shanhaicontinent.xunyicao_age6.name=§4Lavender******佰万year
 
-tile.shanhaicontinent.yueguanghua_age0.name=§2月光花种子
-tile.shanhaicontinent.yueguanghua_age1.name=§f月光花******Ⅹ年
-tile.shanhaicontinent.yueguanghua_age2.name=§e月光花******佰年
-tile.shanhaicontinent.yueguanghua_age3.name=§d月光花******仟年
-tile.shanhaicontinent.yueguanghua_age4.name=§8月光花******万年
-tile.shanhaicontinent.yueguanghua_age5.name=§c月光花******Ⅹ万年
-tile.shanhaicontinent.yueguanghua_age6.name=§4月光花******佰万年
+tile.shanhaicontinent.yueguanghua_age0.name=§2Moonlight Flower Seed
+tile.shanhaicontinent.yueguanghua_age1.name=§fMoonlight Flower******Ⅹyear
+tile.shanhaicontinent.yueguanghua_age2.name=§eMoonlight Flower******佰year
+tile.shanhaicontinent.yueguanghua_age3.name=§dMoonlight Flower******仟year
+tile.shanhaicontinent.yueguanghua_age4.name=§8Moonlight Flower******万year
+tile.shanhaicontinent.yueguanghua_age5.name=§cMoonlight Flower******Ⅹ万year
+tile.shanhaicontinent.yueguanghua_age6.name=§4Moonlight Flower******佰万year
 
-tile.shanhaicontinent.zhushamei_age0.name=§2朱莎梅种子
-tile.shanhaicontinent.zhushamei_age1.name=§f朱莎梅******Ⅹ年
-tile.shanhaicontinent.zhushamei_age2.name=§e朱莎梅******佰年
-tile.shanhaicontinent.zhushamei_age3.name=§d朱莎梅******仟年
-tile.shanhaicontinent.zhushamei_age4.name=§8朱莎梅******万年
-tile.shanhaicontinent.zhushamei_age5.name=§c朱莎梅******Ⅹ万年
-tile.shanhaicontinent.zhushamei_age6.name=§4朱莎梅******佰万年
-
-
-
-hungu.nianxian=§c年限: §e+%s
-hungu:jingyan=§c经验: §e+%s
-hungu:wugong=§c物攻: §e+%s
-hungu:baojishanghai=§c爆伤: §e+%s
-hungu:baojilv=§c暴击率: §e+%s
-hungu:zhenshang=§c真伤: §e+%s
-hungu:yuanshushanghai=§c元素伤害: §e+%s
-hungu:xixue=§c吸血: §e+%s
-hungu:wufang=§c物防: §e+%s
-hungu:yuansukangxing=§c元素抗性: §e+%s
-hungu:maxshengming=§c生命: §e+%s
-hungu:shengminghuifu=§c回复: §e+%s
-hungu:minghzong=§c命中: §e+%s
-hungu:shanbi=§c闪避: §e+%s
-hungu:jingshenli=§c最大精神力: §e+%s
-hungu:hunlizhi=§c魂力: §e+%s
-hungu:renxing=§c韧性: §e+%s
-hungu:wuchuan=§c物穿: §e+%s
-hungu:kangbao=§c抗暴: §e+%s
+tile.shanhaicontinent.zhushamei_age0.name=§2Vermilion seeds
+tile.shanhaicontinent.zhushamei_age1.name=§fVermilion*****Ⅹyear
+tile.shanhaicontinent.zhushamei_age2.name=§eVermilion*****佰year
+tile.shanhaicontinent.zhushamei_age3.name=§dVermilion*****仟year
+tile.shanhaicontinent.zhushamei_age4.name=§8Vermilion*****万year
+tile.shanhaicontinent.zhushamei_age5.name=§cVermilion*****Ⅹ万year
+tile.shanhaicontinent.zhushamei_age6.name=§4Vermilion*****佰万year
 
 
-message.use.success=§c经验: §e+%s
-message.use.fail=§e经验已达最大值，突破后再服用吧
-message.addjingshenli.success=§e精神力+%s
 
-message.removehunhuan.success=§c魂环移除成功
-message.removehunhuan.fail=§4魂环移除失败：未知原因
+hungu.nianxian=§cYears: §e+%s
+hungu:jingyan=§cexperience: §e+%s
+hungu:wugong=§cPhysical attack: §e+%s
+hungu:baojishanghai=§cExplosive injury: §e+%s
+hungu:baojilv=§cCritical hit rate: §e+%s
+hungu:zhenshang=§cTrue injury: §e+%s
+hungu:yuanshushanghai=§cElemental damage: §e+%s
+hungu:xixue=§cVampire: §e+%s
+hungu:wufang=§cPhysical defense: §e+%s
+hungu:yuansukangxing=§cElement resistance: §e+%s
+hungu:maxshengming=§clife: §e+%s
+hungu:shengminghuifu=§creply: §e+%s
+hungu:minghzong=§cHit: §e+%s
+hungu:shanbi=§cDodge: §e+%s
+hungu:jingshenli=§cMaximum spiritual power: §e+%s
+hungu:hunlizhi=§cSoul power: §e+%s
+hungu:renxing=§ctoughness: §e+%s
+hungu:wuchuan=§cInterpenetration of objects: §e+%s
+hungu:kangbao=§cAnti riot: §e+%s
 
-displayer:jingshenli=所需精神力：%s
-message.addjingshenli.fail=§4%s超过了-10000~10000限制
 
-message.usejiuhua.success=§e最大精神力: §b+%s
+message.use.success=§cexperience: §e+%s
+message.use.fail=§eExperience has reached its maximum value, please take it after breaking through
+message.addjingshenli.success=§eSpiritual power+%s
+
+message.removehunhuan.success=§cSoul ring removed successfully
+message.removehunhuan.fail=§4Soul Ring Removal Failure: Unknown Reason
+
+displayer:jingshenli=Required mental strength：%s
+message.addjingshenli.fail=§4%sExceeded the limit of -10000 to 10000
 
 
-message.juexingwuhun.sccuess.huang=§e成功觉醒武魂：§4<荒>
-message.juexingwuhun.sccuess.jingubang=§e成功觉醒武魂：§4<破天神棍>
-message.juexingwuhun.fail.cf=§e觉醒武魂失败：§2你可能已拥有该武魂
+message.addattribute.fail.num=§4%sExceeded the limit of -100000 to 100000
+message.addattribute.fail.attribute=§4%sNot present
+message.addattribute.success=§4%sSuccessfully added
+
+message.usejiuhua.success=§eMaximum spiritual power: §b+%s
 
 
-itemGroup.shanhaicontinent.wuping=山海大陆：物品
-itemGroup.shanhaicontinent.wuhun=山海大陆：武魂
+message.juexingwuhun.sccuess.huang=§eSuccessfully awakened the martial soul：§4<Wilderness>
+message.juexingwuhun.sccuess.jingubang=§eSuccessfully awakened martial soul: §4<Breaking Heaven God Staff>
+message.juexingwuhun.fail.cf=§eAwakening Martial Soul Failed: §2 You may already have the Martial Soul
 
-message.chuanyueweidu.fail=最大精神力不足§b+%s，穿越失败
 
-entity.Villager.shanhaicontinent.huncaoworker=魂草商人
+itemGroup.shanhaicontinent.wuping=ShanhaiContinent: Items
+itemGroup.shanhaicontinent.wuhun=Mountain and Sea Continent: Martial Soul
 
-entity.shanhaicontinent.SeaM_LuoLuoNiao.name=洛洛鸟
-entity.shanhaicontinent.SeaM_HuoQiLin.name=火麒麟
-entity.shanhaicontinent.SeaM_Loong.name=青龙
-entity.shanhaicontinent.SeaM_TianHu.name=天狐
-entity.shanhaicontinent.SeaM_XvanGui.name=玄龟
+message.chuanyueweidu.fail=Insufficient maximum spiritual power §b+%s, failed to traverse
 
-message.open.hunhuan:huang=§2武魂§4<荒>§2已开启，靠近魂环将自动吸收魂环，R键生成技能
-message.open.hunhuan:jingubang=§2武魂§4<破天神棍>§2已开启，靠近魂环将自动吸收魂环，R键打开技能
-message.close.hunhuan:=§2魂环已关闭，将不会自动吸收魂环
+entity.Villager.shanhaicontinent.huncaoworker=Soul Grass Merchant
 
-wuhun.display.name=§e武魂：
-wuhun.display.close=  §0关
-wuhun.display.open.huang=§4<荒>
-wuhun.display.open.jingubang=§4<破天神棍>
-open.display=打开属性面板
+entity.shanhaicontinent.SeaM_LuoLuoNiao.name=Lolo bird
+entity.shanhaicontinent.SeaM_HuoQiLin.name=Fire Qilin
+entity.shanhaicontinent.SeaM_Loong.name=Qinglong
+entity.shanhaicontinent.SeaM_TianHu.name=tenko
+entity.shanhaicontinent.SeaM_XvanGui.name=Xuangui
 
-player.shanhaicontinent.shengming.name=生命:§2%s
-player.shanhaicontinent.gongjili.name=攻击：§c%s
-player.shanhaicontinent.baojishanghai.name=爆伤：§6%s
-player.shanhaicontinent.baojilv.name=爆率：§6%s
-player.shanhaicontinent.zhenshang.name=真伤：§f%s
-player.shanhaicontinent.xixue.name=吸血：§4%s
-player.shanhaicontinent.wufang.name=物防：§9%s
-player.shanhaicontinent.huifu.name=回复：§a%s
-player.shanhaicontinent.mingzhong.name=命中：§d%s
-player.shanhaicontinent.shanbi.name=闪避：§e%s
-player.shanhaicontinent.jingshenli.name=精神力：§b%s
-player.shanhaicontinent.wuchuan.name=物穿：§6%s
-player.shanhaicontinent.kangbao.name=抗暴：§9%s
-player.shanhaicontinent.dengji.name=等级：§e%s
-player.shanhaicontinent.jingyan.name=经验：§1%s
+message.open.hunhuan:huang=§2Martial Soul §4<Wilderness>§2 has been activated, and approaching the soul ring will automatically absorb it, R key generation skill
+message.open.hunhuan:jingubang=§2Martial Soul §4<Sky Breaking Divine Stick>§2 has been activated. Approaching the soul ring will automatically absorb it, R key to open skill
+message.open.hunhuan:haotianchui=§2Martial Soul §4<Haotian Holy Hammer>§2 has been activated. Approaching the soul ring will automatically absorb it, R key to open skill
+message.close.hunhuan:=§2The soul ring has been closed and will not be automatically absorbed
+
+wuhun.display.name=§eMartial Soul:
+wuhun.display.close=  §0shut
+wuhun.display.open.huang=§4<Wilderness>
+wuhun.display.open.jingubang=§4<Breaking Heaven God Staff>
+wuhun.display.open.haotianchui=§4<Haotian Holy Hammer>
+open.display=Open the Property Panel
+
+player.shanhaicontinent.shengming.name=life:§2%s
+player.shanhaicontinent.gongjili.name=attack：§c%s
+player.shanhaicontinent.baojishanghai.name=Explosive injury：§6%s
+player.shanhaicontinent.baojilv.name=Explosion rate：§6%s
+player.shanhaicontinent.zhenshang.name=True injury：§f%s
+player.shanhaicontinent.xixue.name=Vampire：§4%s
+player.shanhaicontinent.wufang.name=Physical defense：§9%s
+player.shanhaicontinent.huifu.name=reply：§a%s
+player.shanhaicontinent.mingzhong.name=Hit：§d%s
+player.shanhaicontinent.shanbi.name=Dodge：§e%s
+player.shanhaicontinent.jingshenli.name=Spiritual power：§b%s
+player.shanhaicontinent.wuchuan.name=Interpenetration of objects：§6%s
+player.shanhaicontinent.kangbao.name=Anti riot：§9%s
+player.shanhaicontinent.dengji.name=grade：§e%s
+player.shanhaicontinent.jingyan.name=experience：§1%s
 
 player.shanhaicontinent.hp.name=HP：  %0.1f
 player.shanhaicontinent.jsp.name=JSP：  %0.1f
 
-message.hunhuan.fenjie=分解完成
-message.hunhuan.list-1=你离开了魂环
-message.hunhuan.opentishi=你靠近了一个魂环，使用k键开启武魂可吸收魂环
-message.hunhuan.list.no=§c等级不够或经验不足无法吸收魂环
-message.hunhuan.list.false=§b精神力§f不足，无法继续吸收魂环
-message.hunhuan.list0=你靠近了一个§6%s年§e魂环，§f将自动吸收魂环，§b你也可以蹲下来分解魂环
-message.hunhuan.list1=开始吸收魂环，§6精神力§b-%s
-message.hunhuan.list2=正在吸收魂环，§6精神力§b-%s
-message.hunhuan.list3=正在吸收魂环，§6精神力§b-%s
-message.hunhuan.list4=正在吸收魂环，§6精神力§b-%s
-message.hunhuan.sccuess=成功吸收%s年§e魂环§f，等级§a+1
-message.hunhuan.fail=%s年§e魂环§f中的怨念过于强大，魂环吸收失败
-message.hunhuan.list6=正在吸收魂环，§6精神力-%s
+message.hunhuan.fenjie=Decomposition completed
+message.hunhuan.list-1=You left the soul ring
+message.hunhuan.opentishi=You have approached a soul ring, use the k key to activate the martial soul that can absorb the soul ring
+message.hunhuan.list.no=§cInsufficient level or experience to absorb soul rings
+message.hunhuan.list.false=§bInsufficient spiritual power §f, unable to continue absorbing soul rings
+message.hunhuan.list0=You are approaching a soul ring in year 6%s. The soul ring will be automatically absorbed by the soul ring in year f, and you can also squat down to decompose the soul ring in year b
+message.hunhuan.list1=Starting to absorb soul rings, §6 spiritual power§b-%s
+message.hunhuan.list2=Absorbing soul rings, §6 spiritual power§b-%s
+message.hunhuan.list3=Absorbing soul rings, §6 spiritual power §b-%s
+message.hunhuan.list4=Absorbing soul rings, §6 spiritual power §b-%s
+message.hunhuan.sccuess=Successfully absorbed%s year §e soul ring §f, level§a+1
+message.hunhuan.fail=%sThe resentment in the soul ring of year e is too strong, and the absorption of the soul ring has failed
+message.hunhuan.list6=Absorbing soul rings, §6 spiritual power -%s
 
-message.tupo.fail.client.jingyan=§b经验不够，再磨练一下把！
-message.tupo.fail.client.hunhuan=§6达到等级上限，需先吸收魂环
-message.tupo.fail=突破失败
-message.tupo.sccuess0=成功突破到§9%s§a级魂士
-message.tupo.sccuess1=成功突破到§9%s§b级魂师
-message.tupo.sccuess2=成功突破到§9%s§c级大魂师
-message.tupo.sccuess3=成功突破到§9%s§d级魂尊
-message.tupo.sccuess4=成功突破到§9%s§e级魂宗
-message.tupo.sccuess5=成功突破到§9%s§8级魂王
-message.tupo.sccuess6=成功突破到§9%s§7级魂帝
-message.tupo.sccuess7=成功突破到§9%s§6级魂圣
-message.tupo.sccuess8=成功突破到§9%s§5级魂斗罗
-message.tupo.sccuess9=成功突破到§9%s§4级封号斗罗
-message.tupo.sccuess-1=成功突破到§f%s§4级§f§0000神
-
-
-
-nianxian.display0.name=§2年限: §4%s
-nianxian.display1.name=§2年限: §c%s
-nianxian.display2.name=§2年限: §0%s
-nianxian.display3.name=§2年限: §5%s
-nianxian.display4.name=§2年限: §e%s
-nianxian.display5.name=§2年限: §f%s
-
-0nianxian=§4年限:
-1nianxian=§c年限:
-2nianxian=§0年限:
-3nianxian=§5年限:
-4nianxian=§e年限:
-5nianxian=§f年限:
-
-key.shanhai=山海大陆
-key.shanhaicontinent.mykey_R=生成技能
-key.shanhaicontinent.mykey_p=突破
-key.shanhaicontinent.mykey_o=属性面板
-key.shanhaicontinent.mykey_K=魂环开关
+message.tupo.fail.client.jingyan=§bNot enough experience, let's hone it a bit more!
+message.tupo.fail.client.hunhuan=§6To reach the level limit, you need to first absorb soul rings
+message.tupo.fail=Breakthrough failure
+message.tupo.sccuess0=Successfully broken through to level A Soul Warrior in §9%s
+message.tupo.sccuess1=Successfully broken through to level 9%s and b soul master
+message.tupo.sccuess2=Successfully broken through to level 9%s and level C Soul Master
+message.tupo.sccuess3=Successfully broken through to level 9%s and d Soul Lord
+message.tupo.sccuess4=Successfully broken through to level 9%s and e Soul Sect
+message.tupo.sccuess5=Successfully broken through to level 8 Soul King in §9%s
+message.tupo.sccuess6=Successfully broken through to level 7 Soul Emperor in §9%s
+message.tupo.sccuess7=Successfully broken through to level 6 Soul Saint in §9%s
+message.tupo.sccuess8=Successfully broken through to level 5 Soul Douluo in §9%s
+message.tupo.sccuess9=Successfully broken through to level 4 Douluo of §9%s
+message.tupo.sccuess-1=Successfully broken through to level 4 of §f%s §f §0000 God
 
 
-effect.shanhaicontinent.bianhua=§a梦回万古
 
-effect.shanhaicontinent.wuqijndzsft=§b斗战神佛体
-effect.shanhaicontinent.wuqijndzsy=§b斗战圣域
-effect.shanhaicontinent.wuqijnjdy=§b金斗云
-effect.shanhaicontinent.wuqijnjgz=§4紧箍咒
-effect.shanhaicontinent.wuqijnjgzs=§b金箍真身
-effect.shanhaicontinent.wuqijnjlcy=§4九龙禅音
+nianxian.display0.name=§2Years: §4%s
+nianxian.display1.name=§2Years: §c%s
+nianxian.display2.name=§2Years: §0%s
+nianxian.display3.name=§2Years: §5%s
+nianxian.display4.name=§2Years: §e%s
+nianxian.display5.name=§2Years: §f%s
 
-effect.shanhaicontinent.wuhunhuangbzmzzs=§b不知名至尊术
-effect.shanhaicontinent.wuhunhuanglhbs=§b轮回宝术
+0nianxian=§4Years:
+1nianxian=§cYears:
+2nianxian=§0Years:
+3nianxian=§5Years:
+4nianxian=§eYears:
+5nianxian=§fYears:
+
+key.shanhai=Shanhai Continent
+key.shanhaicontinent.mykey_R=Generate skills
+key.shanhaicontinent.mykey_p=break through
+key.shanhaicontinent.mykey_o=Property Panel
+key.shanhaicontinent.mykey_K=Soul Ring Switch
 
 
-advancement.shanhaicontinent.root=§1初到山海
-advancement.shanhaicontinent.root.desc=§f《§6山海大陆§f》 mod交流群：§e697487125
+effect.shanhaicontinent.bianhua=§aDreaming back to eternity
 
-advancement.shanhaicontinent.dengji_1=§a魂士
-advancement.shanhaicontinent.dengji_1.desc=§a第一次升级
+effect.shanhaicontinent.wuqijndzsft=§bFighting God Buddha Body
+effect.shanhaicontinent.wuqijndzsy=§bDouzhan Holy Domain
+effect.shanhaicontinent.wuqijnjdy=§bJin Douyun
+effect.shanhaicontinent.wuqijnjgz=§4Band-tightening Spell
+effect.shanhaicontinent.wuqijnjgzs=§bGolden Hoop True Body
+effect.shanhaicontinent.wuqijnjlcy=§4Jiulong Zen Sound
 
-advancement.shanhaicontinent.dengji_6=§e武魂觉醒
-advancement.shanhaicontinent.dengji_6.desc=§e成功觉醒武魂，通过K键控制武魂开关
+effect.shanhaicontinent.wuhunhuangbzmzzs=§bUnknown Supreme Art
+effect.shanhaicontinent.wuhunhuanglhbs=§bReincarnation Treasure Technique
 
-advancement.shanhaicontinent.dengji_10=§b魂师
-advancement.shanhaicontinent.dengji_10.desc=§a成功吸收第一魂环并突破到§b魂师,通过R键可以召唤技能了~
 
-advancement.shanhaicontinent.dengji_20=§c大魂师
-advancement.shanhaicontinent.dengji_20.desc=§a成功吸收第二魂环并突破到§c大魂师
+effect.shanhaicontinent.potion.wuhunhtchtht=§bHaotian Bodyguard
+effect.shanhaicontinent.potion.wuhunhtchthd=§bHaotian Shield
 
-advancement.shanhaicontinent.dengji_30=§d魂尊
-advancement.shanhaicontinent.dengji_30.desc=§a成功吸收第三魂环并突破到§d魂尊
 
-advancement.shanhaicontinent.dengji_40=§e魂宗
-advancement.shanhaicontinent.dengji_40.desc=§a成功吸收第四魂环并突破到§e魂宗
+advancement.shanhaicontinent.root=§1First arrived at the mountains and seas
+advancement.shanhaicontinent.root.desc=§fMod communication group for §6 Mountains, Seas, and Continents §f: §e697487125
 
-advancement.shanhaicontinent.dengji_50=§8魂王
-advancement.shanhaicontinent.dengji_50.desc=§a成功吸收第五魂环并突破到§8魂王
+advancement.shanhaicontinent.dengji_1=§aSoul Warrior
+advancement.shanhaicontinent.dengji_1.desc=§aFirst upgrade
 
-advancement.shanhaicontinent.dengji_60=§7魂帝
-advancement.shanhaicontinent.dengji_60.desc=§a成功吸收第六魂环并突破到§7魂帝
+advancement.shanhaicontinent.dengji_6=§eMartial Soul Awakening
+advancement.shanhaicontinent.dengji_6.desc=§eSuccessfully awakened the martial soul, control the martial soul switch with the K key
 
-advancement.shanhaicontinent.dengji_70=§6魂圣
-advancement.shanhaicontinent.dengji_70.desc=§a成功吸收第七魂环并突破到§6魂圣
+advancement.shanhaicontinent.dengji_10=§bSoul Master
+advancement.shanhaicontinent.dengji_10.desc=§aSuccessfully absorbed the first soul ring and broke through to the §b soul master. You can summon skills with the R key now~
 
-advancement.shanhaicontinent.dengji_80=§5魂斗罗
-advancement.shanhaicontinent.dengji_80.desc=§a成功吸收第八魂环并突破到§5魂斗罗
+advancement.shanhaicontinent.dengji_20=§cGreat Soul Master
+advancement.shanhaicontinent.dengji_20.desc=§aSuccessfully absorbed the second soul ring and broke through to the §C Great Soul Master
 
-advancement.shanhaicontinent.dengji_90=§4封号斗罗
-advancement.shanhaicontinent.dengji_90.desc=§a成功吸收第九魂环并突破到§4封号斗罗
+advancement.shanhaicontinent.dengji_30=§dSoul Lord
+advancement.shanhaicontinent.dengji_30.desc=§aSuccessfully absorbed the third soul ring and broke through to the §D Soul Lord
 
-advancement.shanhaicontinent.dengji_99=§0九九至尊
-advancement.shanhaicontinent.dengji_99.desc=§8感受到天地的压制
+advancement.shanhaicontinent.dengji_40=§eSoul Sect
+advancement.shanhaicontinent.dengji_40.desc=§aSuccessfully absorbed the fourth soul ring and broke through to the §e Soul Sect
 
-advancement.shanhaicontinent.xishouhunhuan_100=§a吸收白色魂环
-advancement.shanhaicontinent.xishouhunhuan_100.desc=§a成功吸收一个佰年以内魂环，末地与地狱存在更加强大的魂兽
+advancement.shanhaicontinent.dengji_50=§8Soul King
+advancement.shanhaicontinent.dengji_50.desc=§aSuccessfully absorbed the fifth soul ring and broke through to the §8 Soul King
 
-advancement.shanhaicontinent.xishouhunhuan_1000=§b吸收佰年魂环
-advancement.shanhaicontinent.xishouhunhuan_1000.desc=§a成功吸收一个佰年魂环，末地与地狱存在更加强大的魂兽
+advancement.shanhaicontinent.dengji_60=§7Soul Emperor
+advancement.shanhaicontinent.dengji_60.desc=§aSuccessfully absorbed the sixth soul ring and broke through to the §7 Soul Emperor
 
-advancement.shanhaicontinent.xishouhunhuan_10000=§c吸收千年魂环
-advancement.shanhaicontinent.xishouhunhuan_10000.desc=§a成功吸收一个千年魂环，末地与地狱存在更加强大的魂兽
+advancement.shanhaicontinent.dengji_70=§6Soul Saint
+advancement.shanhaicontinent.dengji_70.desc=§aSuccessfully absorbed the seventh soul ring and broke through to the §6 Soul Saint
 
-advancement.shanhaicontinent.xishouhunhuan_100000=§d吸收万年魂环
-advancement.shanhaicontinent.xishouhunhuan_100000.desc=§a成功吸收一个万年魂环
+advancement.shanhaicontinent.dengji_80=§5contra
+advancement.shanhaicontinent.dengji_80.desc=§aSuccessfully absorbed the eighth soul ring and broke through to the §5 Soul Douluo
 
-advancement.shanhaicontinent.xishouhunhuan_1000000=§e吸收十万年魂环
-advancement.shanhaicontinent.xishouhunhuan_1000000.desc=§a成功吸收一个十万年魂环
+advancement.shanhaicontinent.dengji_90=§4Title Douluo
+advancement.shanhaicontinent.dengji_90.desc=§aSuccessfully absorbed the ninth soul ring and broke through to the §4 title Douluo
 
-advancement.shanhaicontinent.xishouhunhuan_10000001=§4吸收百万年魂环
-advancement.shanhaicontinent.xishouhunhuan_10000001.desc=§a成功吸收一个百万年魂环
+advancement.shanhaicontinent.dengji_99=§0Jiujiu Supreme
+advancement.shanhaicontinent.dengji_99.desc=§8Feeling the oppression of heaven and earth
 
-advancement.shanhaicontinent.pot=获得造化炉
-advancement.shanhaicontinent.pot.desc=配方：工作台物品槽序号4-6-7-9<金锭> 序号5<钻石> 序号8<铁块>
+advancement.shanhaicontinent.xishouhunhuan_100=§aAbsorb white soul rings
+advancement.shanhaicontinent.xishouhunhuan_100.desc=§aSuccessfully absorbed a soul ring within a hundred years, and there are even more powerful soul beasts in the end and hell
 
-advancement.shanhaicontinent.hunye=提炼精华
-advancement.shanhaicontinent.hunye.desc=§f利用§e造化炉§f提炼§d精华,§a燃料槽放§b煤炭§a，任意属性槽放§d魂草
+advancement.shanhaicontinent.xishouhunhuan_1000=§bAbsorb a century old soul ring
+advancement.shanhaicontinent.xishouhunhuan_1000.desc=§aSuccessfully absorbed a century old soul ring, and there are even more powerful soul beasts in the end and hell
 
-advancement.shanhaicontinent.danyao=制作丹药
-advancement.shanhaicontinent.danyao.desc=§f利用§e造化炉§f制作§d丹药,§a配方槽放§b单方,§a燃料槽放§b煤炭§a，属性槽放§d魂草
+advancement.shanhaicontinent.xishouhunhuan_10000=§cAbsorb millennium soul rings
+advancement.shanhaicontinent.xishouhunhuan_10000.desc=§aSuccessfully absorbed a millennium soul ring, and there are even more powerful soul beasts in the end and hell
 
-advancement.shanhaicontinent.fenjiebonemeal=魂骨分解
-advancement.shanhaicontinent.fenjiebonemeal.desc=§f利用§e造化炉§f分解§d魂骨,§a配方槽放§b开天镐,§a燃料槽放§b煤炭§a，属性槽放§d魂骨
+advancement.shanhaicontinent.xishouhunhuan_100000=§dAbsorb eternal soul rings
+advancement.shanhaicontinent.xishouhunhuan_100000.desc=§aSuccessfully absorbed a 10000 year soul ring
 
-advancement.shanhaicontinent.bone=魂骨
-advancement.shanhaicontinent.bone.desc=成功获得一块魂骨，击杀魂怪概率掉落或秘境宝箱获得
+advancement.shanhaicontinent.xishouhunhuan_1000000=§eAbsorb 100000 year soul rings
+advancement.shanhaicontinent.xishouhunhuan_1000000.desc=§aSuccessfully absorbed a 100000 year soul ring
 
-advancement.shanhaicontinent.soulbonemeal=魂骨粉
-advancement.shanhaicontinent.soulbonemeal.desc=右键魂土催生魂草，可以将多余的魂骨分解成魂骨粉
+advancement.shanhaicontinent.xishouhunhuan_10000001=§4Absorb a million year soul ring
+advancement.shanhaicontinent.xishouhunhuan_10000001.desc=§aSuccessfully absorbed a million year soul ring
 
-advancement.shanhaicontinent.textpickaxe=开天稿
-advancement.shanhaicontinent.textpickaxe.desc=前期事半功倍，配方：工作台序号1-3<绿宝石>,2<钻石块>,5-8<铁块>
+advancement.shanhaicontinent.pot=Obtain the Refining Furnace
+advancement.shanhaicontinent.pot.desc=Formula: Workbench item slot number 4-6 7-9<Gold ingot>number 5<Diamond>number 8<Iron block>
 
-advancement.shanhaicontinent.textsword=圣道之剑
-advancement.shanhaicontinent.textsword.desc=传说被镇压在末地居仙阁底下，
+advancement.shanhaicontinent.hunye=Refine essence
+advancement.shanhaicontinent.hunye.desc=§fRefine §d essence with §e chemical furnace §f, §a fuel tank contains §b coal §a, and §d soul grass is stored in any attribute tank
 
-advancement.shanhaicontinent.bianhua=彼岸花
-advancement.shanhaicontinent.bianhua.desc=生长时对附近玩家施加debuff<§d梦回万古§f>
+advancement.shanhaicontinent.danyao=Making Pills
+advancement.shanhaicontinent.danyao.desc=§fUsing the §E manufacturing furnace §F to make §D pills, §A formula tank is placed in §B monotherapy, §A fuel tank is placed in §B coal, §A attribute tank is placed in §D soul grass
 
-advancement.shanhaicontinent.zhuansheng=§4轮回转生
-advancement.shanhaicontinent.zhuansheng.desc=达到满级且带有梦回万古时，通过睡觉转生,返还武魂果实，保留十分之一的属性，等级归零
+advancement.shanhaicontinent.fenjiebonemeal=Soul bone breakdown
+advancement.shanhaicontinent.fenjiebonemeal.desc=§fUsing the §E manufacturing furnace §F to decompose §D soul bones, §A formula tank placed §B to open a pickaxe, §A fuel tank placed §B coal, §A attribute tank placed §D soul bones
+
+advancement.shanhaicontinent.bone=Soul bone
+advancement.shanhaicontinent.bone.desc=Successfully obtained a soul bone, with a chance to drop or obtain a secret realm treasure box by killing soul monsters
+
+advancement.shanhaicontinent.soulbonemeal=Soul bone powder
+advancement.shanhaicontinent.soulbonemeal.desc=Right click on Soul Earth to spawn Soul Grass, which can decompose excess soul bones into soul bone powder
+
+advancement.shanhaicontinent.textpickaxe=Opening draft
+advancement.shanhaicontinent.textpickaxe.desc=Early stage results are twice the result with half the effort. Recipes: Workbench numbers 1-3<Emerald>, 2<Diamond block>, 5-8<Iron block>
+
+advancement.shanhaicontinent.textsword=Sword of the Holy Way
+advancement.shanhaicontinent.textsword.desc=Legend has it that he was suppressed under the Immortal Pavilion in the End of the Earth,
+
+advancement.shanhaicontinent.bianhua=Bianan Flower
+advancement.shanhaicontinent.bianhua.desc=Apply debuff to nearby players during growth
+
+advancement.shanhaicontinent.zhuansheng=§4Reincarnation
+advancement.shanhaicontinent.zhuansheng.desc=When reaching the full level and carrying the dream of returning to eternity, reincarnate through sleep, return the martial soul fruit, retain one tenth of its attributes, and level to zero
