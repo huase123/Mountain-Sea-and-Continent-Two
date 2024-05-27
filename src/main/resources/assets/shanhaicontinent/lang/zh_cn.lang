@@ -64,12 +64,12 @@ item.shanhaicontinentwuqijnhtctdwj.name=§e魂技：§b《天地无极》 §f---
 item.haotianchui.jineng.tdwj.list0=§a发出强大的力量风暴，前方的敌人造成伤害
 item.haotianchui.jineng.tdwj.list1=§e伤害加成：§9+200%物攻
 
-item.shanhaicontinentwuqijnhtchtjj.name=§e魂技：§b《昊天九绝》 §f------ 武魂：§e《浩天圣锤》
+item.shanhaicontinentwuqijnhtchtjj.name=§e魂技：§b《浩天九绝》 §f------ 武魂：§e《浩天圣锤》
 item.haotianchui.jineng.htjj.list0=§a调用全身之力，形成力量风暴，对范围内的敌人照成伤害
 item.haotianchui.jineng.htjj.list1=§e伤害加成：§9+60%物攻
 item.haotianchui.jineng.htjj.list2=§e持续时间：§9 10s
 
-item.shanhaicontinentwuqijnhtchtht.name=§e魂技：§b《昊天护体》 §f------ 武魂：§e《浩天圣锤》
+item.shanhaicontinentwuqijnhtchtht.name=§e魂技：§b《浩天护体》 §f------ 武魂：§e《浩天圣锤》
 item.haotianchui.jineng.htht.list0=§a锤影在周身形成一圈能量光罩进行防御
 item.haotianchui.jineng.htht.list1=§e属性加成：§9+20000防御
 item.haotianchui.jineng.htht.list2=§e持续时间：§9 20s
@@ -78,7 +78,7 @@ item.shanhaicontinentwuqijnhtcltyj.name=§e魂技：§b《凌天一击》 §f---
 item.haotianchui.jineng.ltyj.list0=§a将全身魂力集中于一点迅速发出
 item.haotianchui.jineng.ltyj.list1=§e伤害加成：§9+500%物攻
 
-item.shanhaicontinentwuqijnhtcltlc.name=§e魂技：§b《凌天一击》 §f------ 武魂：§e《浩天圣锤》
+item.shanhaicontinentwuqijnhtcltlc.name=§e魂技：§b《落天雷锤》 §f------ 武魂：§e《浩天圣锤》
 item.haotianchui.jineng.ltlc.list0=§a引动天地之力，降下天雷，对60格范围内的敌人造成无差别的持续伤害
 item.haotianchui.jineng.ltlc.list1=§e伤害加成：§9+300%物攻
 

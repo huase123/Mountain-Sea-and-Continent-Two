@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shanhaicontinent:soulsoil",
+  "result": { "item": "shanhaicontinent:soulsoil", "data": 6 },
+  "ingredients": [
+    { "item": "shanhaicontinent:soulsoil", "data": 5 },
+    { "item": "shanhaicontinent:soulsoil", "data": 5 },
+    { "item": "shanhaicontinent:soulsoil", "data": 5 },
+    { "item": "shanhaicontinent:soulsoil", "data": 5 }
+  ]
+}

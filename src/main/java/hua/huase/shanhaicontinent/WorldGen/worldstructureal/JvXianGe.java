@@ -51,7 +51,7 @@ public class JvXianGe extends MapGenStructure
         k = k * 20;
         l = l * 20;
         k = k + random.nextInt(60);
-        l = l + random.nextInt(30);
+        l = l + random.nextInt(60);
 
         if (i == k && j == l )
         {

@@ -1,5 +1,7 @@
 package hua.huase.shanhaicontinent.event;
 
+import hua.huase.shanhaicontinent.capability.CapabilityRegistryHandler;
+import hua.huase.shanhaicontinent.capability.PlayerCapability;
 import hua.huase.shanhaicontinent.item.armor.ArmorApi;
 import hua.huase.shanhaicontinent.item.jineng.JinengMethond;
 import net.minecraft.entity.EntityLivingBase;

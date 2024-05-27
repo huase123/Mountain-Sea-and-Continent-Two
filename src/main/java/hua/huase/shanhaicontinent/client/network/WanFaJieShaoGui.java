@@ -1,6 +1,7 @@
 package hua.huase.shanhaicontinent.client.network;
 
 import hua.huase.shanhaicontinent.ExampleMod;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.GlStateManager;
@@ -17,6 +18,8 @@ public class WanFaJieShaoGui extends GuiContainer
 {
     private static final ResourceLocation TEXTURE =
             new ResourceLocation(ExampleMod.MODID + ":textures/gui/wanfajieshao.png");
+    private static final ResourceLocation TEXTUREEN =
+            new ResourceLocation(ExampleMod.MODID + ":textures/gui/wanfajieshaoenglish.png");
 
     public WanFaJieShaoGui()
     {
@@ -44,7 +47,13 @@ public class WanFaJieShaoGui extends GuiContainer
         int left = (this.width - this.xSize) / 2;
         int top = (this.height - this.ySize) / 2;
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-        this.mc.getTextureManager().bindTexture(TEXTURE);//获取背景图片
+        if("en_us".equals(Minecraft.getMinecraft().gameSettings.language)){
+
+            this.mc.getTextureManager().bindTexture(TEXTUREEN);//获取背景图片
+        }else {
+            this.mc.getTextureManager().bindTexture(TEXTURE);//获取背景图片
+        }
+
         Tessellator tessellator = Tessellator.getInstance();
         BufferBuilder bufferbuilder = tessellator.getBuffer();
         bufferbuilder.begin(7, DefaultVertexFormats.POSITION_TEX);

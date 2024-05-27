@@ -36,7 +36,8 @@ public class LivingDeathDrop {
             int nianxian = entityLiving.getCapability(MONSTER_CAPABILITY, null).getNianxian();
 
             if(nianxian<=1) return;
-            if ("player".equals(damageSource.getDamageType())) {
+//            if ("player".equals(damageSource.getDamageType())) {
+            if (damageSource.getTrueSource() instanceof EntityPlayer) {
 
                 MonsterCapability monsterCapability = entityLiving.getCapability(MONSTER_CAPABILITY, null);
 

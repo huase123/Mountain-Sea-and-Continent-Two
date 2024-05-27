@@ -31,7 +31,6 @@ public class ItemToss {
             BlockPos position = entityItem.getPosition();
             boolean equals = entityWorld.getBlockState(position.down()).equals(Blocks.GRASS.getDefaultState());
             if(equals){
-
                 entityWorld.setBlockState(position.down(),shportal.getDefaultState());
             }
         }

@@ -37,7 +37,7 @@ public class ExampleMod
 {
     public static final String MODID = "shanhaicontinent";
     public static final String NAME = "Mountain, Sea, and Continent Two";
-    public static final String VERSION = "2.0.5";
+    public static final String VERSION = "2.0.6";
 //    public static final HashMap<Integer, MonsterCapabilityProvider> monsterHashMap = new HashMap();
     public static final HashMap<Integer, MonsterCapability> monsterHashMapCapability = new HashMap();
     public static final HashMap<Integer, PlayerCapability> playerHashMap = new HashMap();

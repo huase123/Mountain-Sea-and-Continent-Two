@@ -76,6 +76,9 @@ public class DanyaoJiuhua extends Item {
                 item.shrink(1);
             }
 
+
+
+
             SendTitle.sendTitle((EntityPlayerMP)playerIn,new TextComponentTranslation("message.usejiuhua.success" , danyaocapability1.getJingshenli()),ACTIONBAR,YELLOW);
         }
         worldIn.playSound((EntityPlayer) null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_PLAYER_BURP, SoundCategory.PLAYERS, 0.5F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
